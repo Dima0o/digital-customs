@@ -1,0 +1,2972 @@
+  [1m[35m (472.9ms)[0m  [1m[35mCREATE DATABASE "blog_development" ENCODING = 'unicode'[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (429.5ms)[0m  [1m[35mCREATE DATABASE "blog_test" ENCODING = 'unicode'[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (21.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (20.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(892336952976185220)[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (11.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-08-02 12:20:46.835942"], ["updated_at", "2018-08-02 12:20:46.835942"]]
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(892336952976185220)[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2018-08-02 15:23:37 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (3.3ms)
+Completed 200 OK in 22ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-07 13:32:57 +0300
+  
+AbstractController::ActionNotFound (The action 'welcom' could not be found for WelcomeController):
+  
+actionpack (5.2.0) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.0) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-08-07 13:38:03 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 16ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2018-08-07 13:38:22 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/welcome"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/welcome/index" for 127.0.0.1 at 2018-08-07 13:38:36 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 1623ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.):
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+    14:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+    15: 
+    16:     <!-- For iPhone with high-resolution Retina display: -->
+    17:     <!-- Size should be 114 x 114 pixels -->
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__3756141583763830384_70315187455160'
+Started GET "/welcome/index" for 127.0.0.1 at 2018-08-07 13:39:17 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "favicon.ico" is not present in the asset pipeline.):
+    14:     
+    15:     <!-- For all other devices -->
+    16:     <!-- Size should be 32 x 32 pixels -->
+    17:     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+    18: 
+    19:     <%= javascript_include_tag "application" %>
+    20: 
+  
+app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__3756141583763830384_70315191198300'
+Started GET "/welcome/index" for 127.0.0.1 at 2018-08-07 13:39:18 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "favicon.ico" is not present in the asset pipeline.):
+    14:     
+    15:     <!-- For all other devices -->
+    16:     <!-- Size should be 32 x 32 pixels -->
+    17:     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+    18: 
+    19:     <%= javascript_include_tag "application" %>
+    20: 
+  
+app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__3756141583763830384_70315216902460'
+Started GET "/welcome/index" for 127.0.0.1 at 2018-08-07 13:39:31 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 248ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `bootstrap_flash' for #<#<Class:0x00007fe70f8b8190>:0x00007fe70c2f1660>):
+    41:     <div class="container">
+    42:       <div class="row">
+    43:         <div class="col-lg-9">
+    44:           <%= bootstrap_flash %>
+    45:           <%= yield %>
+    46:         </div>
+    47:         <div class="col-lg-3">
+  
+app/views/layouts/application.html.erb:44:in `_app_views_layouts_application_html_erb__3756141583763830384_70315165328340'
+Started GET "/welcome/index" for 127.0.0.1 at 2018-08-07 13:39:33 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 322ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `bootstrap_flash' for #<#<Class:0x00007fe70f8b8190>:0x00007fe712085d08>):
+    41:     <div class="container">
+    42:       <div class="row">
+    43:         <div class="col-lg-9">
+    44:           <%= bootstrap_flash %>
+    45:           <%= yield %>
+    46:         </div>
+    47:         <div class="col-lg-3">
+  
+app/views/layouts/application.html.erb:44:in `_app_views_layouts_application_html_erb__3756141583763830384_70315212509760'
+Started GET "/welcome/index" for 127.0.0.1 at 2018-08-07 13:39:45 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 222ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `bootstrap_flash' for #<#<Class:0x00007fe70f8b8190>:0x00007fe70cf8d9f0>):
+    40:     <div class="container">
+    41:       <div class="row">
+    42:         <div class="col-lg-9">
+    43:           <%= bootstrap_flash %>
+    44:           <%= yield %>
+    45:         </div>
+    46:         <div class="col-lg-3">
+  
+app/views/layouts/application.html.erb:43:in `_app_views_layouts_application_html_erb__3756141583763830384_70315165889100'
+Started GET "/welcome/index" for 127.0.0.1 at 2018-08-07 13:40:08 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-08-07 13:43:14 +0300
+  
+ActionController::RoutingError (uninitialized constant ArticlesController):
+  
+bootsnap (1.3.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:53:in `block in load_missing_constant'
+bootsnap (1.3.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:53:in `rescue in load_missing_constant'
+bootsnap (1.3.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:42:in `load_missing_constant'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.0) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.0) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.0) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/articles/new" for 127.0.0.1 at 2018-08-07 13:44:37 +0300
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for ArticlesController):
+  
+actionpack (5.2.0) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.0) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/articles/new" for 127.0.0.1 at 2018-08-07 13:46:27 +0300
+Processing by ArticlesController#new as HTML
+Completed 406 Not Acceptable in 88ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (ArticlesController#new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.0) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.0) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.0) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.0) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.0) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.0) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.0) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.0) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.0) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/articles/new" for 127.0.0.1 at 2018-08-07 13:47:32 +0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html within layouts/application
+  Rendered articles/new.html within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.):
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+    14:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+    15: 
+    16:     <!-- For iPhone with high-resolution Retina display: -->
+    17:     <!-- Size should be 114 x 114 pixels -->
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__3756141583763830384_70315209651600'
+Started GET "/articles/new" for 127.0.0.1 at 2018-08-07 13:47:50 +0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html within layouts/application
+  Rendered articles/new.html within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 245ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `bootstrap_flash' for #<#<Class:0x00007fe70c55f898>:0x00007fe7120ee290>):
+    41:     <div class="container">
+    42:       <div class="row">
+    43:         <div class="col-lg-9">
+    44:           <%= bootstrap_flash %>
+    45:           <%= yield %>
+    46:         </div>
+    47:         <div class="col-lg-3">
+  
+app/views/layouts/application.html.erb:44:in `_app_views_layouts_application_html_erb__3756141583763830384_70315208554020'
+Started GET "/articles/new" for 127.0.0.1 at 2018-08-07 13:47:52 +0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html within layouts/application
+  Rendered articles/new.html within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 235ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `bootstrap_flash' for #<#<Class:0x00007fe70c55f898>:0x00007fe71285b7d0>):
+    41:     <div class="container">
+    42:       <div class="row">
+    43:         <div class="col-lg-9">
+    44:           <%= bootstrap_flash %>
+    45:           <%= yield %>
+    46:         </div>
+    47:         <div class="col-lg-3">
+  
+app/views/layouts/application.html.erb:44:in `_app_views_layouts_application_html_erb__3756141583763830384_70315212456420'
+Started GET "/articles/new" for 127.0.0.1 at 2018-08-07 13:48:35 +0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html within layouts/application
+  Rendered articles/new.html within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 219ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `bootstrap_flash' for #<#<Class:0x00007fe70c55f898>:0x00007fe71204f078>):
+    41:     <div class="container">
+    42:       <div class="row">
+    43:         <div class="col-lg-9">
+    44:           <%= bootstrap_flash %>
+    45:           <%= yield %>
+    46:         </div>
+    47:         <div class="col-lg-3">
+  
+app/views/layouts/application.html.erb:44:in `_app_views_layouts_application_html_erb__3756141583763830384_70315208225560'
+Started GET "/articles/new" for 127.0.0.1 at 2018-08-07 13:48:47 +0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html within layouts/application
+  Rendered articles/new.html within layouts/application (0.2ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-08-07 13:49:32 +0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html within layouts/application
+  Rendered articles/new.html within layouts/application (0.3ms)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-08-07 13:49:33 +0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html within layouts/application
+  Rendered articles/new.html within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-08-07 13:49:33 +0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html within layouts/application
+  Rendered articles/new.html within layouts/application (0.2ms)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-08-07 13:49:34 +0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html within layouts/application
+  Rendered articles/new.html within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-08-07 13:50:06 +0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html within layouts/application
+  Rendered articles/new.html within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap_and_overrides' with type 'text/css'
+Checked in these paths: 
+  /Users/imac5/RoR/blog/app/assets/config
+  /Users/imac5/RoR/blog/app/assets/images
+  /Users/imac5/RoR/blog/app/assets/javascripts
+  /Users/imac5/RoR/blog/app/assets/stylesheets
+  /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/actioncable-5.2.0/lib/assets/compiled
+  /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activestorage-5.2.0/app/assets/javascripts
+  /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/actionview-5.2.0/lib/assets/compiled
+  /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /Users/imac5/RoR/blog/node_modules):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "Blog" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12: 
+    13: 
+  
+app/assets/stylesheets/application.css:17
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__3756141583763830384_70315209187740'
+Started GET "/articles/new" for 127.0.0.1 at 2018-08-07 13:50:18 +0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html within layouts/application
+  Rendered articles/new.html within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap_and_overrides' with type 'text/css'
+Checked in these paths: 
+  /Users/imac5/RoR/blog/app/assets/config
+  /Users/imac5/RoR/blog/app/assets/images
+  /Users/imac5/RoR/blog/app/assets/javascripts
+  /Users/imac5/RoR/blog/app/assets/stylesheets
+  /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/actioncable-5.2.0/lib/assets/compiled
+  /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activestorage-5.2.0/app/assets/javascripts
+  /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/actionview-5.2.0/lib/assets/compiled
+  /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /Users/imac5/RoR/blog/node_modules):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "Blog" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12: 
+    13: 
+  
+app/assets/stylesheets/application.css:17
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__3756141583763830384_70315216573240'
+Started GET "/articles/new" for 127.0.0.1 at 2018-08-07 13:50:43 +0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html within layouts/application
+  Rendered articles/new.html within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap_and_overrides' with type 'text/css'
+Checked in these paths: 
+  /Users/imac5/RoR/blog/app/assets/config
+  /Users/imac5/RoR/blog/app/assets/images
+  /Users/imac5/RoR/blog/app/assets/javascripts
+  /Users/imac5/RoR/blog/app/assets/stylesheets
+  /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/actioncable-5.2.0/lib/assets/compiled
+  /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activestorage-5.2.0/app/assets/javascripts
+  /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/actionview-5.2.0/lib/assets/compiled
+  /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /Users/imac5/RoR/blog/node_modules):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "Blog" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12: 
+    13: 
+  
+app/assets/stylesheets/application.css:16
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__3756141583763830384_70315162651160'
+Started GET "/" for 127.0.0.1 at 2018-08-07 14:02:50 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/imac5/RoR/blog/app/assets/config
+  /Users/imac5/RoR/blog/app/assets/images
+  /Users/imac5/RoR/blog/app/assets/javascripts
+  /Users/imac5/RoR/blog/app/assets/stylesheets
+  /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/actioncable-5.2.0/lib/assets/compiled
+  /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activestorage-5.2.0/app/assets/javascripts
+  /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/actionview-5.2.0/lib/assets/compiled
+  /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /Users/imac5/RoR/blog/node_modules):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "Blog" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12: 
+    13: 
+  
+app/assets/stylesheets/application.scss:1
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__3756141583763830384_70315178483720'
+Started GET "/" for 127.0.0.1 at 2018-08-07 14:05:45 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 4139ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `bootstrap_flash' for #<#<Class:0x00007ff1a1ce33e0>:0x00007ff1a1cc9f30>):
+    41:     <div class="container">
+    42:       <div class="row">
+    43:         <div class="col-lg-9">
+    44:           <%= bootstrap_flash %>
+    45:           <%= yield %>
+    46:         </div>
+    47:         <div class="col-lg-3">
+  
+app/views/layouts/application.html.erb:44:in `_app_views_layouts_application_html_erb__4262071694581563028_70337898005260'
+Started GET "/" for 127.0.0.1 at 2018-08-07 14:06:18 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/imac5/RoR/blog/app/views/layouts/application.html.erb:46: syntax error, unexpected '<', expecting ')'
+        </div>
+        ^
+/Users/imac5/RoR/blog/app/views/layouts/application.html.erb:49: unknown regexp option - h
+/Users/imac5/RoR/blog/app/views/layouts/application.html.erb:49: syntax error, unexpected tINTEGER, expecting ')'
+            <h3>Sidebar</h3>
+                          ^
+/Users/imac5/RoR/blog/app/views/layouts/application.html.erb:51: syntax error, unexpected '<'
+              <li class="nav-header">Sidebar...
+              ^
+/Users/imac5/RoR/blog/app/views/layouts/application.html.erb:52: unknown regexp options - path
+/Users/imac5/RoR/blog/app/views/layouts/application.html.erb:52: end pattern with unmatched parenthesis: /li>
+              <li>'.freeze;@output_buffer.append=( link_to "Link1", "/
+/Users/imac5/RoR/blog/app/views/layouts/application.html.erb:52: syntax error, unexpected tINTEGER, expecting ')'
+...pend=( link_to "Link1", "/path1"  );@output_buffer.safe_appe...
+...                              ^
+/Users/imac5/RoR/blog/app/views/layouts/application.html.erb:53: syntax error, unexpected tCONSTANT, expecting ')'
+..._buffer.append=( link_to "Link2", "/path2"  );@output_buffer...
+...                          ^~~~~
+/Users/imac5/RoR/blog/app/views/layouts/application.html.erb:53: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...end=( link_to "Link2", "/path2"  );@output_buffer.safe_appen...
+...                              ^
+/Users/imac5/RoR/blog/app/views/layouts/application.html.erb:54: syntax error, unexpected tCONSTANT, expecting ')'
+..._buffer.append=( link_to "Link3", "/path3"  );@output_buffer...
+...                          ^~~~~
+/Users/imac5/RoR/blog/app/views/layouts/application.html.erb:54: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...end=( link_to "Link3", "/path3"  );@output_buffer.safe_appen...
+...                              ^
+/Users/imac5/RoR/blog/app/views/layouts/application.html.erb:72: unterminated string meets end of file
+          end
+             ^
+/Users/imac5/RoR/blog/app/views/layouts/application.html.erb:72: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/layouts/application.html.erb:46: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:49: unknown regexp option - h
+app/views/layouts/application.html.erb:49: syntax error, unexpected tINTEGER, expecting ')'
+app/views/layouts/application.html.erb:51: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:52: unknown regexp options - path
+app/views/layouts/application.html.erb:52: end pattern with unmatched parenthesis: /li>
+app/views/layouts/application.html.erb:52: syntax error, unexpected tINTEGER, expecting ')'
+app/views/layouts/application.html.erb:53: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/layouts/application.html.erb:53: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/layouts/application.html.erb:54: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/layouts/application.html.erb:54: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/layouts/application.html.erb:72: unterminated string meets end of file
+app/views/layouts/application.html.erb:72: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-08-07 14:06:57 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE DATABASE "blog_development" ENCODING = 'unicode'[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE "blog_test" ENCODING = 'unicode'[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+Started GET "/welcome/index" for 127.0.0.1 at 2018-08-07 14:22:43 +0300
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-08-07 14:22:49 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/path2" for 127.0.0.1 at 2018-08-07 14:44:46 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-08-07 14:44:50 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(892336952976185220)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePages (20180807111219)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(892336952976185220)[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-08-07 14:51:02 +0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-08-07 14:51:05 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(892336952976185220)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePages (20180807111219)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(892336952976185220)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(892336952976185220)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePages (20180807111219)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(892336952976185220)[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-08-07 14:56:11 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 57ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-07 15:14:50 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/rails/info" for 127.0.0.1 at 2018-08-07 15:15:25 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-08-07 15:15:57 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-08-07 15:25:01 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 15:25:12 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-08-07 15:31:14 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(892336952976185220)[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(892336952976185220)[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 15:31:50 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 15:31:51 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-08-07 15:34:00 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.0) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE DATABASE "blog_development" ENCODING = 'unicode'[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "blog_test" ENCODING = 'unicode'[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(892336952976185220)[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+Migrating to CreatePages (20180807115847)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (51.6ms)[0m  [1m[35mCREATE TABLE "pages" ("id" bigserial primary key, "name" character varying, "description" text, "start" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180807115847_create_pages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (2.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180807115847"]]
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(892336952976185220)[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/bin/rake:23
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-08-07 15:35:07 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (4.8ms)
+  Rendered /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.2ms)
+  Rendered /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 31ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-07 15:35:15 +0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 125ms (Views: 120.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 15:36:20 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (163.2ms)
+Completed 500 Internal Server Error in 183ms (ActiveRecord: 5.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `simple_form_for' for #<#<Class:0x00007ff1a9bf83b0>:0x00007ff1a9bc25f8>
+Did you mean?  simple_format):
+    1: <h1>new page</h1>
+    2: <%=simple_form_for(@page) do |f| %>
+    3:   <%= f.input :name %>
+    4:   <%= f.textarea :description %>
+    5: 
+  
+app/views/page/new.html.erb:2:in `_app_views_page_new_html_erb___2459487803889718741_70337955874280'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 15:39:03 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (534.0ms)
+Completed 500 Internal Server Error in 542ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `simple_form_for' for #<#<Class:0x00007ff1a9bf83b0>:0x00007ff1a7edc8d0>
+Did you mean?  simple_format):
+    1: <h1>new page</h1>
+    2: <%=simple_form_for(@page) do |f| %>
+    3:   <%= f.input :name %>
+    4:   <%= f.textarea :description %>
+    5: 
+  
+app/views/page/new.html.erb:2:in `_app_views_page_new_html_erb___2459487803889718741_70337940613360'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 15:40:09 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (128.6ms)
+Completed 500 Internal Server Error in 144ms (ActiveRecord: 3.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `simple_form_for' for #<#<Class:0x00007ff1a378fec8>:0x00007ff1a378e320>
+Did you mean?  simple_format):
+    1: <h1>new page</h1>
+    2: <%=simple_form_for(@page) do |f| %>
+    3:   <%= f.input :name %>
+    4:   <%= f.textarea :description %>
+    5: 
+  
+app/views/page/new.html.erb:2:in `_app_views_page_new_html_erb___2459487803889718741_70337903207000'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 15:40:10 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (138.2ms)
+Completed 500 Internal Server Error in 150ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `simple_form_for' for #<#<Class:0x00007ff1a378fec8>:0x00007ff1a8c608d0>
+Did you mean?  simple_format):
+    1: <h1>new page</h1>
+    2: <%=simple_form_for(@page) do |f| %>
+    3:   <%= f.input :name %>
+    4:   <%= f.textarea :description %>
+    5: 
+  
+app/views/page/new.html.erb:2:in `_app_views_page_new_html_erb___2459487803889718741_70337947699560'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 15:41:02 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (225.8ms)
+Completed 500 Internal Server Error in 233ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `simple_form_for' for #<#<Class:0x00007ff1a378fec8>:0x00007ff1a253b6c8>
+Did you mean?  simple_format):
+    1: <h1>new page</h1>
+    2: <%= simple_form_for @page do |f| %>
+    3:   <%= f.input :name %>
+    4:   <%= f.textarea :description %>
+    5: 
+  
+app/views/page/new.html.erb:2:in `_app_views_page_new_html_erb___2459487803889718741_70337893615580'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 15:46:53 +0300
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (45548.7ms)
+Completed 500 Internal Server Error in 45599ms (ActiveRecord: 4.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `pages_path' for #<#<Class:0x00007f85b03fe840>:0x00007f85b042bd68>
+Did you mean?  page_path
+               image_path):
+    1: <h1>new page</h1>
+    2: <%= simple_form_for @page do |f| %>
+    3:   <%= f.input :name %>
+    4:   <%= f.textarea :description %>
+    5: 
+  
+app/views/page/new.html.erb:2:in `_app_views_page_new_html_erb___2927915102634249501_70106069445440'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 15:47:51 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (125.3ms)
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `pages_path' for #<#<Class:0x00007f85b03fe840>:0x00007f85b39ae260>
+Did you mean?  page_path
+               image_path):
+    1: <h1>new page</h1>
+    2: <%= simple_form_for @page do |f| %>
+    3:   <%= f.input :name %>
+    4:   <%= f.textarea :description %>
+    5: 
+  
+app/views/page/new.html.erb:2:in `_app_views_page_new_html_erb___2927915102634249501_70106110326240'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 15:56:37 +0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 4.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"page"}, missing required keys: [:id]):
+    1: <h1>new page</h1>
+    2: <%= simple_form_for(@page, method: :post, url: page_path) do |f| %>
+    3:   <%= f.input :name %>
+    4:   <%= f.textarea :description %>
+    5: 
+  
+app/views/page/new.html.erb:2:in `_app_views_page_new_html_erb__3698598124934934746_70363485862860'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 15:57:09 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (270.3ms)
+Completed 500 Internal Server Error in 280ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `pages_path' for #<#<Class:0x00007ffd8d2fac78>:0x00007ffd8c7d7a80>
+Did you mean?  page_path
+               image_path):
+    1: <h1>new page</h1>
+    2: <%= simple_form_for(@page, method: :post, url: pages_path) do |f| %>
+    3:   <%= f.input :name %>
+    4:   <%= f.textarea :description %>
+    5: 
+  
+app/views/page/new.html.erb:2:in `_app_views_page_new_html_erb__3698598124934934746_70363478925980'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 15:57:53 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (207.5ms)
+Completed 500 Internal Server Error in 214ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `textarea' for #<SimpleForm::FormBuilder:0x00007ffd8d517f88>
+Did you mean?  text_area):
+    1: <h1>new page</h1>
+    2: <%= simple_form_for(@page, method: :post, url: '/page') do |f| %>
+    3:   <%= f.input :name %>
+    4:   <%= f.textarea :description %>
+    5: 
+    6:   <%= f.button :submit %>
+    7: <%end %>
+  
+app/views/page/new.html.erb:4:in `block in _app_views_page_new_html_erb__3698598124934934746_70363479295120'
+app/views/page/new.html.erb:2:in `_app_views_page_new_html_erb__3698598124934934746_70363479295120'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 15:58:08 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (115.9ms)
+Completed 500 Internal Server Error in 123ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `textarea' for #<SimpleForm::FormBuilder:0x00007ffd8d69efa0>
+Did you mean?  text_area):
+    1: <h1>new page</h1>
+    2: <%= simple_form_for(@page, method: :post, url: '/page') do |f| %>
+    3:   <%= f.input :name %>
+    4:   <%= f.textarea :description %>
+    5: 
+    6:   <%= f.button :submit %>
+    7: <%end %>
+  
+app/views/page/new.html.erb:4:in `block in _app_views_page_new_html_erb__3698598124934934746_70363481391060'
+app/views/page/new.html.erb:2:in `_app_views_page_new_html_erb__3698598124934934746_70363481391060'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 15:58:11 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1426ms (Views: 1422.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 15:58:33 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 61ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 15:58:34 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 15:58:35 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 61ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 15:58:35 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 75ms (Views: 73.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 15:58:36 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 79ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 15:58:45 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (69719.8ms)
+Completed 200 OK in 69781ms (Views: 69777.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:00:30 +0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 1294ms (Views: 1267.0ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:02:33 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 60ms (Views: 46.9ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:02:43 +0300
+Processing by PageController#new as HTML
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:02:43 +0300
+  Rendering page/new.html.erb within layouts/application
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (12.4ms)
+  Rendered page/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 133ms (Views: 131.1ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 127ms (Views: 124.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:03:34 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 104ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:03:36 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 53ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:03:36 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 51ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:04:53 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 61ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:04:53 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 61ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:11:07 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 67ms (Views: 52.7ms | ActiveRecord: 5.7ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 16:13:17 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FwsyMq1tG9lQl2DYeWZ+oN8Cj48/DH25YApitAODlfYnSCQKBGntsqny5JRwRsgac+e87RrL9H9exlOrdsgM6g==", "page"=>{"name"=>"", "description"=>""}, "commit"=>"Create Page"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/page_controller.rb:13:in `create'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:17:26 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 65ms (Views: 53.4ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 16:17:36 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Sh8vKmJG5GlSCtaKqzeORoCpWP95w5hFLFAby9bHfR56XDkSy0ISAqtvUsaiFzj8LExrnVwEEYMSnCrUo4zkAg==", "page"=>{"name"=>"", "description"=>""}, "commit"=>"Create Page"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/page_controller.rb:13:in `create'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:18:45 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 71ms (Views: 60.1ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 16:18:49 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5mLLq6DFE71A93+gGfki02+eW2Bzam2K8YenRE1LcLXWId2TCcHl1rmS++wQ2ZRpw3toAlat5EzPS5ZbOADpqQ==", "page"=>{"name"=>"", "description"=>""}, "commit"=>"Create Page"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:13
+No template found for PageController#create, rendering head :no_content
+Completed 204 No Content in 114ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:20:54 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 61ms (Views: 50.6ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 16:20:55 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TcIRkVMnZqAKS4flu/ONTCosXSOXj187GqzdjiqAgXx9gQep+iOQy/MuA6my0zv2hsluQbJI1v0kYOyRX8sYYA==", "page"=>{"name"=>"", "description"=>""}, "commit"=>"Create Page"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:14
+No template found for PageController#create, rendering head :no_content
+Completed 204 No Content in 102ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:21:17 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 70ms (Views: 57.7ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 16:21:18 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AyRTJUu6nfiCONjsxko10nf8z8NMVAlZHhdgiB0Qa78zZ0Ud4r5rk3tdXKDPaoNo2xn8oWmTgJ8g21GXaFvyow==", "page"=>{"name"=>"", "description"=>""}, "commit"=>"Create Page"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:14
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:14
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms)
+
+
+  
+NameError (undefined local variable or method `this' for #<Page:0x00007fa460b89758>):
+  
+app/models/page.rb:4:in `block in <class:Page>'
+app/controllers/page_controller.rb:14:in `create'
+Started POST "/page" for 127.0.0.1 at 2018-08-07 16:21:31 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AyRTJUu6nfiCONjsxko10nf8z8NMVAlZHhdgiB0Qa78zZ0Ud4r5rk3tdXKDPaoNo2xn8oWmTgJ8g21GXaFvyow==", "page"=>{"name"=>"", "description"=>""}, "commit"=>"Create Page"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:14
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:14
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms)
+
+
+  
+NameError (undefined local variable or method `this' for #<Page:0x00007fa459f85200>):
+  
+app/models/page.rb:4:in `block in <class:Page>'
+app/controllers/page_controller.rb:14:in `create'
+Started POST "/page" for 127.0.0.1 at 2018-08-07 16:21:35 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AyRTJUu6nfiCONjsxko10nf8z8NMVAlZHhdgiB0Qa78zZ0Ud4r5rk3tdXKDPaoNo2xn8oWmTgJ8g21GXaFvyow==", "page"=>{"name"=>"", "description"=>""}, "commit"=>"Create Page"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:14
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:14
+No template found for PageController#create, rendering head :no_content
+Completed 204 No Content in 112ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:21:37 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 56ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 16:21:42 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bS1hgvCZCtwC/8ZsDdFA8MkHXjGHtmKnGJnVpzguVJpdbne6WZ38t/uaQiAE8fZKZeJtU6Jx62EmVeS4TWXNhg==", "page"=>{"name"=>"", "description"=>""}, "commit"=>"Create Page"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:14
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:14
+No template found for PageController#create, rendering head :no_content
+Completed 204 No Content in 103ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:22:33 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 65ms (Views: 53.1ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 16:22:35 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u8noPCTv3TGNGKv9smG+/oP/loaUnMwHlF1hoRmw7ZKLiv4EjesrWnR9L7G7QQhELxql5LFbRcGqkVC+bPt0jg==", "page"=>{"name"=>"", "description"=>""}, "commit"=>"Create Page"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+No template found for PageController#create, rendering head :no_content
+Completed 204 No Content in 120ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:22:44 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 53ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 16:22:46 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AQ9QPoYwWFo7hMg16CvPMguCqCEWw0Xy5kYzKKcQk+gxTEYGLzSuMcLhTHnhC3mIp2ebQzMEzDTYigI30lsK9A==", "page"=>{"name"=>"", "description"=>""}, "commit"=>"Create Page"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+No template found for PageController#create, rendering head :no_content
+Completed 204 No Content in 119ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:26:02 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 61ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 16:26:07 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RxnwJBcc71G66ssikMke//Sig7mYPYmmBCfdk6/qLFx3WuYcvhgZOkOPT26Z6ahFWEew2736AGA66+yM2qG1QA==", "page"=>{"name"=>"qq1", "description"=>"fsdfasdfsdafasdfsda"}, "commit"=>"Create Page"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[36mPage Create (24.5ms)[0m  [1m[32mINSERT INTO "pages" ("name", "description", "start", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "qq1"], ["description", "fsdfasdfsdafasdfsda"], ["start", 0], ["created_at", "2018-08-07 13:26:07.411397"], ["updated_at", "2018-08-07 13:26:07.411397"]]
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/page_controller.rb:12
+No template found for PageController#create, rendering head :no_content
+Completed 204 No Content in 126ms (ActiveRecord: 25.0ms)
+
+
+  [1m[36mPage Load (0.4ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" ORDER BY "pages"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/page/1" for 127.0.0.1 at 2018-08-07 16:41:23 +0300
+Processing by PageController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant PageController::Article):
+  
+app/controllers/page_controller.rb:4:in `show'
+Started GET "/page/1" for 127.0.0.1 at 2018-08-07 16:41:45 +0300
+Processing by PageController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPage Load (0.4ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" WHERE "pages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/page_controller.rb:4
+  Rendering page/show.html.erb within layouts/application
+  Rendered page/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 113ms (Views: 58.8ms | ActiveRecord: 43.0ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2018-08-07 16:42:59 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  Rendered page/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 50ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2018-08-07 16:43:38 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  Rendered page/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2018-08-07 16:43:40 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/page" for 127.0.0.1 at 2018-08-07 16:43:54 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  Rendered page/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 49ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:43:56 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 56ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 16:43:59 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uZG7gMFuBh4zbFxODQtOlkH4sUXmIylWJuEMxoHVc4GuCCYIupQDuQ71Jm8ZGlgLr+8o5sTYQm942KvXKwayPg==", "page"=>{"name"=>"asdsa", "description"=>"gwrw"}, "commit"=>"Create Page"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[36mPage Create (1.1ms)[0m  [1m[32mINSERT INTO "pages" ("name", "description", "start", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "asdsa"], ["description", "gwrw"], ["start", 0], ["created_at", "2018-08-07 13:43:59.999640"], ["updated_at", "2018-08-07 13:43:59.999640"]]
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/page_controller.rb:13
+Redirected to 
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 7.2ms)
+
+
+  
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  
+app/controllers/page_controller.rb:14:in `create'
+Started GET "/page/1" for 127.0.0.1 at 2018-08-07 16:51:45 +0300
+Processing by PageController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" WHERE "pages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/page_controller.rb:4
+  Rendering page/show.html.erb within layouts/application
+  Rendered page/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 71ms (Views: 55.0ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/page/2" for 127.0.0.1 at 2018-08-07 16:51:50 +0300
+Processing by PageController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPage Load (0.5ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" WHERE "pages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/page_controller.rb:4
+  Rendering page/show.html.erb within layouts/application
+  Rendered page/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 54ms (Views: 51.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/page/3" for 127.0.0.1 at 2018-08-07 16:51:54 +0300
+Processing by PageController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPage Load (0.5ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" WHERE "pages"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/page_controller.rb:4
+Completed 404 Not Found in 2ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Page with 'id'=3):
+  
+app/controllers/page_controller.rb:4:in `show'
+Started GET "/page/page/new" for 127.0.0.1 at 2018-08-07 16:57:31 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/page/page/new"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:57:40 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 75ms (Views: 59.6ms | ActiveRecord: 6.9ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 16:57:43 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QpRENEfIij1q7FyELEEFRPNNScTfZzXXAjTdBgDP2mJy11IM7sx8VpOJ2MglYbP+X6h6pvqgvBE8+OwZdYRDfg==", "page"=>{"name"=>"", "description"=>""}, "commit"=>"<input type=\"submit\" name=\"commit\" value=\"Search\" data-disable-with=\"Search\" />"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:13
+Completed 500 Internal Server Error in 172ms (ActiveRecord: 0.5ms)
+
+
+  
+NameError (undefined local variable or method `redirect' for #<PageController:0x00007fa460019bc0>
+Did you mean?  redirect_to):
+  
+app/controllers/page_controller.rb:14:in `create'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:57:56 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/imac5/RoR/blog/app/views/page/new.html.erb:7: syntax error, unexpected ',', expecting ')'
+...append=( submit_tag("Search") ,input_html: {class: 'btn btn-...
+...                              ^):
+  
+app/views/page/new.html.erb:7: syntax error, unexpected ',', expecting ')'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 16:58:14 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 63ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:00:58 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 64ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:00:59 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 56ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 17:02:40 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u4eK0J7xphKInHe8MXVM+0c3Hv6UywHsfAetorSrVbyLxJzoN/VQeXH58/A4VfpB69ItnLEMiCpCy5y9weDMoA==", "page"=>{"name"=>"werwe", "description"=>"qer"}, "commit"=>"Create Page"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[36mPage Create (6.3ms)[0m  [1m[32mINSERT INTO "pages" ("name", "description", "start", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "werwe"], ["description", "qer"], ["start", 0], ["created_at", "2018-08-07 14:02:40.836519"], ["updated_at", "2018-08-07 14:02:40.836519"]]
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/page_controller.rb:13
+Completed 500 Internal Server Error in 175ms (ActiveRecord: 13.1ms)
+
+
+  
+NameError (undefined local variable or method `redirect' for #<PageController:0x00007fa460138100>
+Did you mean?  redirect_to):
+  
+app/controllers/page_controller.rb:14:in `create'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:02:45 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 71ms (Views: 68.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:04:56 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 82ms (Views: 78.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:04:57 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 68ms (Views: 66.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:04:58 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 71ms (Views: 68.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:05:19 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/imac5/RoR/blog/app/views/page/new.html.erb:7: syntax error, unexpected ':', expecting =>
+...boolean_style: :inline, :class: 'btn btn-primary' );@output_...
+...                              ^):
+  
+app/views/page/new.html.erb:7: syntax error, unexpected ':', expecting =>
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:06:54 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 60ms (Views: 57.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 17:06:59 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cln6s44f4EpYNT/7hNPhzEytPJiK64UvU1CL2Vj22y1CGuyLJxsWIaFQu7eN81d24EgP+q8sDOltnLrGLb1CMQ==", "page"=>{"name"=>"qq1", "description"=>"asda"}, "commit"=>"create post"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[36mPage Create (0.4ms)[0m  [1m[32mINSERT INTO "pages" ("name", "description", "start", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "qq1"], ["description", "asda"], ["start", 0], ["created_at", "2018-08-07 14:06:59.820155"], ["updated_at", "2018-08-07 14:06:59.820155"]]
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/page_controller.rb:13
+Completed 500 Internal Server Error in 169ms (ActiveRecord: 6.5ms)
+
+
+  
+NameError (undefined local variable or method `redirect' for #<PageController:0x00007fa4609ab080>
+Did you mean?  redirect_to):
+  
+app/controllers/page_controller.rb:14:in `create'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:07:31 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 70ms (Views: 67.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 17:07:33 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WGPYDY5Ab2gQUPkooQ6/vHbDbCMHDuBz1IHazalmi/doIM41J0SZA+k1fWSoLgkG2iZfQSLJabXqTevS3C0S6w==", "page"=>{"name"=>"", "description"=>""}, "commit"=>"Create Page"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:13
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:13
+Completed 500 Internal Server Error in 173ms (ActiveRecord: 0.7ms)
+
+
+  
+NameError (undefined local variable or method `redirect' for #<PageController:0x00007fa4608921d0>
+Did you mean?  redirect_to):
+  
+app/controllers/page_controller.rb:14:in `create'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:08:34 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 68ms (Views: 66.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 17:08:36 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2SO5nSdqn+dYjMScpuny2O+uJb8punSV1CFQ/DtLG3DpYK+ljm5pjKHpQNCvyURiQ0sW3Qx9/VPq7WHjTgCCbA==", "page"=>{"name"=>"", "description"=>""}, "create_and_add"=>"Create Page"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:13
+Completed 500 Internal Server Error in 152ms (ActiveRecord: 0.6ms)
+
+
+  
+NameError (undefined local variable or method `redirect' for #<PageController:0x00007fa460a837a0>
+Did you mean?  redirect_to):
+  
+app/controllers/page_controller.rb:14:in `create'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:10:58 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 81ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:11:01 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 70ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:11:02 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 50ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:11:05 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 56ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:11:06 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 61ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:11:53 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 17:11:55 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SIraOGGxCv9didej8g2mR0hD6B2pgzo4ffMwWE9wpZV4ycwAyLX8lKTsU+/7LRD95Kbbf4xEs/5DPwFHOjs8iQ==", "page"=>{"name"=>"", "description"=>""}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:13
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:13
+Completed 500 Internal Server Error in 161ms (ActiveRecord: 0.8ms)
+
+
+  
+NameError (undefined local variable or method `redirect' for #<PageController:0x00007fa45e0a8d68>
+Did you mean?  redirect_to):
+  
+app/controllers/page_controller.rb:14:in `create'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:19:21 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 73ms (Views: 71.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:19:23 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 64ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:19:38 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 69ms (Views: 66.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:19:58 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 77ms (Views: 74.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:19:59 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 53ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:20:16 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 63ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:20:32 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 63ms (Views: 60.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:20:34 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 51ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:20:55 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 53ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:20:57 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 53ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:20:58 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 56ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:21:15 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 54ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:21:17 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 63ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 17:21:21 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"djR3e4bJi3Z0jDYx0DLNJJxyZezyeKTeFzz7uR8b+RFGd2FDL819HY3psn3ZEnueMJdWjte/LRgp8MqmalBgDQ==", "page"=>{"name"=>"", "description"=>""}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:13
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 0.6ms)
+
+
+  
+NameError (undefined local variable or method `redirect' for #<PageController:0x00007fa45afb1e80>
+Did you mean?  redirect_to):
+  
+app/controllers/page_controller.rb:14:in `create'
+Started POST "/page" for 127.0.0.1 at 2018-08-07 17:22:08 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"djR3e4bJi3Z0jDYx0DLNJJxyZezyeKTeFzz7uR8b+RFGd2FDL819HY3psn3ZEnueMJdWjte/LRgp8MqmalBgDQ==", "page"=>{"name"=>"", "description"=>""}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:13
+No template found for PageController#create, rendering head :no_content
+Completed 204 No Content in 114ms (ActiveRecord: 6.2ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 17:22:09 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"djR3e4bJi3Z0jDYx0DLNJJxyZezyeKTeFzz7uR8b+RFGd2FDL819HY3psn3ZEnueMJdWjte/LRgp8MqmalBgDQ==", "page"=>{"name"=>"", "description"=>""}, "commit"=>"Add drink"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:13
+No template found for PageController#create, rendering head :no_content
+Completed 204 No Content in 100ms (ActiveRecord: 0.5ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 17:22:12 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"djR3e4bJi3Z0jDYx0DLNJJxyZezyeKTeFzz7uR8b+RFGd2FDL819HY3psn3ZEnueMJdWjte/LRgp8MqmalBgDQ==", "page"=>{"name"=>"", "description"=>""}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:13
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:13
+No template found for PageController#create, rendering head :no_content
+Completed 204 No Content in 101ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:22:16 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 59ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 17:22:18 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jrBRlbV8RXG+YS+gY/QBo69c05bg4yu6B4b5fsrx0pC+80etHHizGkcEq+xq1LcZA7ng9MUkonw5Sshhv7pLjA==", "page"=>{"name"=>"wrw", "description"=>"werw"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[36mPage Create (0.8ms)[0m  [1m[32mINSERT INTO "pages" ("name", "description", "start", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "wrw"], ["description", "werw"], ["start", 0], ["created_at", "2018-08-07 14:22:18.932262"], ["updated_at", "2018-08-07 14:22:18.932262"]]
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/page_controller.rb:13
+No template found for PageController#create, rendering head :no_content
+Completed 204 No Content in 110ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:27:27 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 75ms (Views: 63.0ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 17:27:29 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FAgl6lEXCBkOr6h18GOH7C4aEztceb3G2NM8uh3J/MAkSzPS+BP+cvfKLDn5QzFWgv8gWXm+NADmHw2laIJl3A==", "page"=>{"name"=>"qeq", "description"=>"qwe"}, "commit"=>"Add drink"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[36mPage Create (0.4ms)[0m  [1m[32mINSERT INTO "pages" ("name", "description", "start", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "qeq"], ["description", "qwe"], ["start", 0], ["created_at", "2018-08-07 14:27:29.110326"], ["updated_at", "2018-08-07 14:27:29.110326"]]
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/page_controller.rb:13
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 6.4ms)
+
+
+  
+NoMethodError (undefined method `resources' for #<PageController:0x00007fa459f5e240>):
+  
+app/controllers/page_controller.rb:14:in `create'
+Started POST "/page" for 127.0.0.1 at 2018-08-07 17:28:43 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FAgl6lEXCBkOr6h18GOH7C4aEztceb3G2NM8uh3J/MAkSzPS+BP+cvfKLDn5QzFWgv8gWXm+NADmHw2laIJl3A==", "page"=>{"name"=>"qeq", "description"=>"qwe"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[36mPage Create (0.4ms)[0m  [1m[32mINSERT INTO "pages" ("name", "description", "start", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "qeq"], ["description", "qwe"], ["start", 0], ["created_at", "2018-08-07 14:28:43.464540"], ["updated_at", "2018-08-07 14:28:43.464540"]]
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/page_controller.rb:13
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 9.7ms)
+
+
+  
+NoMethodError (undefined method `resources' for #<PageController:0x00007fa4609332d8>):
+  
+app/controllers/page_controller.rb:14:in `create'
+Started GET "/pages" for 127.0.0.1 at 2018-08-07 17:28:49 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pages"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/page" for 127.0.0.1 at 2018-08-07 17:29:36 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FAgl6lEXCBkOr6h18GOH7C4aEztceb3G2NM8uh3J/MAkSzPS+BP+cvfKLDn5QzFWgv8gWXm+NADmHw2laIJl3A==", "page"=>{"name"=>"qeq", "description"=>"qwe"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[36mPage Create (0.3ms)[0m  [1m[32mINSERT INTO "pages" ("name", "description", "start", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "qeq"], ["description", "qwe"], ["start", 0], ["created_at", "2018-08-07 14:29:36.456388"], ["updated_at", "2018-08-07 14:29:36.456388"]]
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/page_controller.rb:13
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 10.0ms)
+
+
+  
+NoMethodError (undefined method `resources' for #<PageController:0x00007fa45ae60770>):
+  
+app/controllers/page_controller.rb:14:in `create'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:43:51 +0300
+  
+ActionController::RoutingError (uninitialized constant ActionController::Responder):
+  
+lib/application_responder.rb:1:in `<main>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/page_controller.rb:1:in `<main>'
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:46:06 +0300
+  [1m[35m (6.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (52.2ms)
+Completed 200 OK in 1422ms (Views: 1396.0ms | ActiveRecord: 4.5ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 17:46:54 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s2izbc2wc/9qt7B2HxRHT6jHOkt6YdwHORSBdUKcHSCDK6VVZLSFlJPSNDoWNPH1BCIJKV+mVcEH2LBqN9eEPA==", "page"=>{"name"=>"", "description"=>""}, "commit"=>"Add drink"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 79ms (Views: 71.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2018-08-07 17:47:18 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  Rendered page/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 64ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:47:22 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 88ms (Views: 70.5ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:47:43 +0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 1269ms (Views: 1242.7ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 17:47:59 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j9Kq49qUble2hhJCOSTtJ8RFz3mDkuP1XsUjRZ/08Cm/kbzbc5CYPE/jlg4wBFudaKD8G6ZVajNgCRJa6r9pNQ==", "page"=>{"name"=>"", "description"=>""}, "commit"=>"Add drink"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+No template found for PageController#create, rendering head :no_content
+Completed 204 No Content in 109ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:48:24 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 73ms (Views: 60.2ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:48:39 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 60ms (Views: 57.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 17:48:43 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hJlGr2CwWNbGcntEVuCFFpQ82aX2hTpOQF+mlPUaWU+02lCXybSuvT8X/whfwDOsONnqx9NCs4h+k5eLgFHAUw==", "page"=>{"name"=>"", "description"=>""}, "commit"=>"Add drink"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 98ms (Views: 85.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-07 17:49:01 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"njq7ISztSPkbrdTIehsY9FmjxpEtvP5t0UMBWr8cKpCuea0Zhem+kuLIUIRzO65O9Ub18wh7d6vvjzBFylezjA==", "page"=>{"name"=>"TEST!111", "description"=>"fsdafdsafadsfasd sdff sadfsd"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[36mPage Create (6.3ms)[0m  [1m[32mINSERT INTO "pages" ("name", "description", "start", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "TEST!111"], ["description", "fsdafdsafadsfasd sdff sadfsd"], ["start", 0], ["created_at", "2018-08-07 14:49:01.488826"], ["updated_at", "2018-08-07 14:49:01.488826"]]
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/page_controller.rb:12
+Redirected to http://localhost:3000/page/9
+Completed 302 Found in 22ms (ActiveRecord: 12.8ms)
+
+
+Started GET "/page/9" for 127.0.0.1 at 2018-08-07 17:49:01 +0300
+Processing by PageController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" WHERE "pages"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/page_controller.rb:4
+  Rendering page/show.html.erb within layouts/application
+  Rendered page/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 59ms (Views: 52.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2018-08-07 17:49:45 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  Rendered page/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-07 17:51:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/page" for 127.0.0.1 at 2018-08-07 17:52:21 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  Rendered page/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 69ms (Views: 67.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2018-08-07 17:52:23 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  Rendered page/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 50ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2018-08-07 17:52:24 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  Rendered page/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 46ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-07 17:52:29 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 56ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2018-08-07 17:52:30 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  Rendered page/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/1" for 127.0.0.1 at 2018-08-07 17:53:06 +0300
+Processing by PageController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" WHERE "pages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/page_controller.rb:4
+  Rendering page/show.html.erb within layouts/application
+  Rendered page/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 49ms (Views: 46.1ms | ActiveRecord: 0.3ms)
+
+
