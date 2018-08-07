@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f33f392a-6c7b-45a8-bbd6-f3edadf4ef9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/page_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/page_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/page/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/page/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/page/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/page/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/page/pages.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/page/pages.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/b7/2643f4066a2caf" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/b7/2643f4066a2caf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-load-path-cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-load-path-cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/pids/server.pid" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/pids/server.pid" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -49,6 +41,7 @@
           <entry key="html" value="1" />
           <entry key="js" value="1" />
           <entry key="less" value="1" />
+          <entry key="md" value="1" />
           <entry key="rb" value="27" />
           <entry key="scss" value="4" />
           <entry key="yml" value="2" />
@@ -61,6 +54,7 @@
           <entry key="HTML" value="1" />
           <entry key="JavaScript" value="1" />
           <entry key="Less" value="1" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RHTML" value="17" />
           <entry key="Ruby" value="32" />
@@ -71,11 +65,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Gemfile" value="15" />
-          <entry key="Ruby Console" value="17" />
+          <entry key="Ruby Console" value="79" />
           <entry key="css" value="2" />
-          <entry key="erb" value="560" />
+          <entry key="erb" value="577" />
           <entry key="html" value="1" />
           <entry key="js" value="3" />
+          <entry key="md" value="32" />
           <entry key="rb" value="632" />
           <entry key="rb1" value="9" />
           <entry key="scss" value="18" />
@@ -86,9 +81,10 @@
           <entry key="CSS" value="2" />
           <entry key="HTML" value="1" />
           <entry key="JavaScript" value="3" />
+          <entry key="Markdown" value="32" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="RHTML" value="560" />
-          <entry key="Ruby" value="664" />
+          <entry key="RHTML" value="577" />
+          <entry key="Ruby" value="726" />
           <entry key="SCSS" value="18" />
         </counts>
       </usages-collector>
@@ -144,11 +140,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/page/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="375">
+                <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -176,15 +184,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -236,6 +235,7 @@
         <option value="$PROJECT_DIR$/app/views/page/new.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/page_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/page/index.html.erb" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -443,12 +443,12 @@
       <updated>1533211890661</updated>
       <workItem from="1533211892708" duration="495000" />
       <workItem from="1533212410172" duration="253000" />
-      <workItem from="1533637282424" duration="18828000" />
+      <workItem from="1533637282424" duration="19110000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19576000" />
+    <option name="totallyTimeSpent" value="19858000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -463,13 +463,13 @@
     <frame x="1920" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49950445" visible="true" weight="0.18370607" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49950445" visible="true" weight="0.18370607" />
       <window_info id="Structure" order="1" sideWeight="0.50049555" side_tool="true" weight="0.18370607" />
       <window_info id="Favorites" order="2" sideWeight="0.50073856" side_tool="true" weight="0.18370607" />
       <window_info anchor="bottom" id="Messages" sideWeight="0.49893504" weight="0.32903865" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49627262" weight="0.32903865" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4978701" visible="true" weight="0.4281467" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978701" weight="0.4281467" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39940536" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -477,7 +477,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49840257" weight="0.32903865" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4946752" weight="0.37661052" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4946752" visible="true" weight="0.37661052" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5037274" side_tool="true" weight="0.32903865" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -785,8 +785,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/page/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="375">
+            <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
