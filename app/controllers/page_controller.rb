@@ -22,8 +22,8 @@ class PageController < ApplicationController
   end
 
 
-  def pages
-
+  def index
+    @pages = Page.all
   end
 
   private

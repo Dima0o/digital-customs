@@ -1,5 +1,4 @@
 <h1>new page</h1>
-<% puts @page.errors.full_messages %>
 <%= simple_form_for(@page, method: :post, url: page_index_path,  defaults: { input_html: { class: 'default_class' } }) do |f| %>
   <%= f.input :name %>
   <%= f.input :description %>

@@ -1,2 +1,11 @@
 <h1>Page#index</h1>
 <p>Find me in app/views/page/index.html.erb</p>
+<h1>All list</h1>
+
+<ul class="list-group list-group-flush">
+
+  <% @pages.each do |page|%>
+    <li class="list-group-item"><%= page.name %></li>
+  <% end %>
+
+</ul>
