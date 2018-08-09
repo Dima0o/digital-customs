@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # get 'page/index'
-  root 'welcome#index'
+  root 'page#index'
 
 
 

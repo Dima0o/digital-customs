@@ -3318,3 +3318,1029 @@ Processing by PageController#index as HTML
 Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-08-09 10:45:42 +0300
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1390ms (Views: 1379.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2018-08-09 10:48:18 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (20.4ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:7
+  Rendered page/index.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 87ms (Views: 55.1ms | ActiveRecord: 27.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-09 10:49:07 +0300
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2018-08-09 10:49:42 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:7
+  Rendered page/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 73ms (Views: 65.4ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2018-08-09 10:58:00 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (0.6ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:7
+  Rendered page/index.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     6: 
+     7:   <% @pages.each do |page|%>
+     8:   <div class="row">
+     9:     <h1><%=@page.name %></h1>
+    10:     <p><%=@page.description %></p>
+    11:     <div>
+    12:       <div class="round round-sm hollow ">
+  
+app/views/page/index.html.erb:9:in `block in _app_views_page_index_html_erb___4428531385020485897_70216935753980'
+app/views/page/index.html.erb:7:in `_app_views_page_index_html_erb___4428531385020485897_70216935753980'
+Started GET "/page" for 127.0.0.1 at 2018-08-09 10:58:09 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:7
+  Rendered page/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `names' for nil:NilClass):
+     6: 
+     7:   <% @pages.each do |page|%>
+     8:   <div class="row">
+     9:     <h1><%=@page.names %></h1>
+    10:     <p><%=@page.description %></p>
+    11:     <div>
+    12:       <div class="round round-sm hollow ">
+  
+app/views/page/index.html.erb:9:in `block in _app_views_page_index_html_erb___4428531385020485897_70216920613340'
+app/views/page/index.html.erb:7:in `_app_views_page_index_html_erb___4428531385020485897_70216920613340'
+Started GET "/page" for 127.0.0.1 at 2018-08-09 11:01:47 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:7
+  Rendered page/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 54ms (Views: 51.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2018-08-09 11:02:25 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:7
+  Rendered page/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2018-08-09 11:02:46 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:7
+  Rendered page/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 48ms (Views: 45.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-09 11:10:25 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (58.4ms)
+Completed 200 OK in 104ms (Views: 100.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:10:28 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jxp1mPzHmEu7md+RtWozVsl+OSz7OejjmZIWSEBsjFy0A3W5gVQrhYo8ABFLJyUpXM4z39ojid82QwxzesICaA==", "page"=>{"name"=>"", "description"=>"wer"}, "commit"=>"Add drink"}
+  [1m[35m (5.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 71ms (Views: 57.7ms | ActiveRecord: 6.0ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:10:31 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xr+goc808kkXMmz86qLPu2A4QI6z1WVo1z91cm6COjlI0bsF7zbUBqNj9baFP1l7Zb3/kUhgvOV0B/z/jLPk2g==", "page"=>{"name"=>"wer", "description"=>"wer"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[36mPage Create (24.4ms)[0m  [1m[32mINSERT INTO "pages" ("name", "description", "start", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "wer"], ["description", "wer"], ["start", 0], ["created_at", "2018-08-09 08:10:31.669292"], ["updated_at", "2018-08-09 08:10:31.669292"]]
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/page_controller.rb:12
+Redirected to http://localhost:3000/page/10
+Completed 302 Found in 33ms (ActiveRecord: 25.5ms)
+
+
+Started GET "/page/10" for 127.0.0.1 at 2018-08-09 11:10:31 +0300
+Processing by PageController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" WHERE "pages"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/page_controller.rb:4
+  Rendering page/show.html.erb within layouts/application
+  Rendered page/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 54ms (Views: 42.9ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2018-08-09 11:10:34 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:7
+  Rendered page/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 48ms (Views: 45.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-09 11:18:21 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 62ms (Views: 47.6ms | ActiveRecord: 5.5ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:18:24 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OzKmdj4UaRtrbS2jmYBAnavTa0oTfqefzfMXoQI3CrYAK6ZXQ4fa1VrI8iNnzVbiPmNhuTJkxqNiIg2aOJmEgg==", "page"=>{"name"=>"qwe", "description"=>"qwe"}, "commit"=>"Add drink"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 72ms (Views: 63.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:18:27 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4DKegTbyvsVCyx58+8frGk7SrS1MEpuVwi8hgZpJthxuXIUlFvCYivaahzaUWn3aS1cSMrenQhhhF6gMeHho/w==", "page"=>{"name"=>"qweqweqe", "description"=>"qweqwfqf"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 54ms (Views: 47.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:18:29 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rrwwnwZbucgjlDWfrWZiAJyqwSVJUnM3EuTJnYPW0jQg0is7Jlmfh5fFrNXC+/TAmS9+OrLnqrqx3EAQYecM1w==", "page"=>{"name"=>"qweqweqe", "description"=>"qweqwfqf"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 56ms (Views: 50.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:18:30 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hQjI8/SCejDWSpL6CcS7rOWZrS36ggjsLChN181dUi0LZtNX1IBcf2IbC7BmWS1s4BwSMgE30WGPEMRaL2yMzg==", "page"=>{"name"=>"qweqweqe", "description"=>"qweqwfqf"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 54ms (Views: 47.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:18:31 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EDxv2RJ/2d2+lRoBIgVO11h3K7pMo33qX0qtNVZSm+ueUnR9Mn3/kgrEg0tNmNgXXfKUpbcWpGf8ciS4tGNFCA==", "page"=>{"name"=>"qweqweqe", "description"=>"qweqwfqf"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 61ms (Views: 54.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:18:31 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tB7zVxSlRCJ2iKtGnbJpizLHBndp/TyqgutruC1MVEQ6cOjzNKdibcLZMgzyL/9LN0K5aJJI5Sch0+I1z32Kpw==", "page"=>{"name"=>"qweqweqe", "description"=>"qweqwfqf"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 53ms (Views: 47.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:18:33 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WltfburC6qxgbLuavHf+NHIq+wxha4+0kp+TnYEnlQPUNUTKysDM49Q9ItDT6mj0d69EE5reVjkxpxoQYxZL4A==", "page"=>{"name"=>"qweqweqe", "description"=>"qweqwfqf"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 57ms (Views: 50.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:18:36 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ASIao5Xw2BVmhmZm8oVHi04ZK5INdzTB4mDMhQ0RxaOPTAEHtfL+WtLX/yydGNFLS5yUjfbC7UxBWEUI7yAbQA==", "page"=>{"name"=>"qweqweqe", "description"=>"qweqwfqf"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 55ms (Views: 48.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:18:37 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BA3yZmNuJGzNNgXMTSXshQOvnDn3o62sv6iB8z5jDPmKY+nCQ2wCI3lnnIYiuHpFBiojJgwWdCEckAh+3FLSGg==", "page"=>{"name"=>"qweqweqe", "description"=>"qweqwfqf"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 61ms (Views: 54.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:18:37 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pLxZ0MPjDYDdRAFcuXOLJ1hJ1F+RGLpP9LZ/BcB6rDsq0kJ04+Erz2kVmBbW7h3nXcxrQGqtY8JXjvaIIkty2A==", "page"=>{"name"=>"qweqweqe", "description"=>"qweqwfqf"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 53ms (Views: 47.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:18:38 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RoYB32o1hY4w9rLrPAhn3rHCblps3MgrDEKUOb75nCDI6Bp7SjejwYSnK6FTlfEetEfRRZdpEaaveh20XMhCww==", "page"=>{"name"=>"qweqweqe", "description"=>"qweqwfqf"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 60ms (Views: 53.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2018-08-09 11:18:39 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (0.5ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:5
+  Rendered page/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 50ms (Views: 43.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-09 11:18:52 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 59ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:18:55 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5yXzNFTh5XxFyV0Rvu0tF60fwCNF6pfxkdrrdy+nlTLcPPMVKXJWsnRsgpFAoDtoOK/K0GTw9s0+C/FMFQkbBg==", "page"=>{"name"=>"qe", "description"=>"e"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 57ms (Views: 50.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:18:59 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pG94DS959/cpoLOW8l0e9uBzIfuMDJf2RG4q1H/qBkEqAWOpD3vRuJ3xKtydwIg25fae5He5TnvnVqNZndvYog==", "page"=>{"name"=>"qeeee", "description"=>"eeee"}, "commit"=>"Add drink"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 55ms (Views: 49.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:19:00 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kZJ0jpEjPhYW1V++5XbRc9KwqDhRKeNMSoiJipdt7hMf/G8qsSEYWaKExvSK60ez1zUXJ6qcOsHpsAAHdVww8A==", "page"=>{"name"=>"qeeee", "description"=>"eeeee"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 55ms (Views: 48.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:19:02 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"APBVeg4BGH8zLT9+Iw61yIPPIQYKE4oSe74c6s5i75OOnk7eLgM+MId8pjRMkyMIhkqeGfGmU5/YhpVnLFMxcA==", "page"=>{"name"=>"qeeee", "description"=>"eeeee"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 64ms (Views: 58.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:19:03 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7DT5R/ZZTvpj4QoMJC44yjpayIIaq3Y8KzuPFl80X61iWuLj1ltotdewk0ZLs64KP993neEer7GIAwabvQWBTg==", "page"=>{"name"=>"qeeee", "description"=>"eeeee"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 54ms (Views: 47.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:19:04 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o78ehurQ78RxvZu+W/8X0KChRfjlF897ZMYb2Kxnx8st0QUiytLJi8XsAvQ0YoEQpST65x6iFvbH/pJVTlYZKA==", "page"=>{"name"=>"qeeee", "description"=>"eeeee"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (3.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 57ms (Views: 47.1ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:19:05 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"65exhNoRnGHvLeRekjG7HaCM87wRj4edb+MHIY80Qt9l+aog+hO6Llt8fRT9rC3dpQlMo+o6XhDM246sbQWcPA==", "page"=>{"name"=>"qeeee", "description"=>"eeeee"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 54ms (Views: 47.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:19:06 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SwmpA7knaWwP6oTJJXH9ITB1jI1cUE1eys+hfj/B9fzFZ7KnmSVPI7u7HYNK7GvhNfAzkqfllNNp9yjz3fArHw==", "page"=>{"name"=>"qeeee", "description"=>"eeeee"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 60ms (Views: 53.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:19:06 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nTE7/t2AAN28t2fWYcRn8PqTu6Q6GrhFVXPkH/UC4SUTXyBa/YImkgjm/pwOWfEw/xYEu8GvYcj2S22SFzM/xg==", "page"=>{"name"=>"qeeee", "description"=>"eeeee"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 53ms (Views: 47.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-08-09 11:31:19 +0300
+  [1m[35m (6.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [14 times] (13.6ms)
+  Rendered /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.5ms)
+  Rendered /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 54ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2018-08-09 11:31:21 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (0.6ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:5
+  Rendered page/index.html.erb within layouts/application (279.4ms)
+Completed 500 Internal Server Error in 293ms (ActiveRecord: 5.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `article' for #<#<Class:0x00007fedc65f5800>:0x00007fedc6593178>):
+     7:     <h1><%= page.name %></h1>
+     8:     <p><%= page.description %></p>
+     9:     <div>
+    10:       <%= link_to 'Edit', edit_article_path(article) %>
+    11:       <span class="badge badge-success">Posted  create <%= page.created_at %></span><div class="pull-right">
+    12: 
+    13:     </div>
+  
+app/views/page/index.html.erb:10:in `block in _app_views_page_index_html_erb___2825255667114914048_70329606003640'
+app/views/page/index.html.erb:5:in `_app_views_page_index_html_erb___2825255667114914048_70329606003640'
+Started GET "/page" for 127.0.0.1 at 2018-08-09 11:31:52 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:5
+  Rendered page/index.html.erb within layouts/application (147.8ms)
+Completed 500 Internal Server Error in 158ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit_article_path' for #<#<Class:0x00007fedc65f5800>:0x00007fedc827b7e0>
+Did you mean?  edit_page_path):
+     7:     <h1><%= page.name %></h1>
+     8:     <p><%= page.description %></p>
+     9:     <div>
+    10:       <%= link_to 'Edit', edit_article_path(page) %>
+    11:       <span class="badge badge-success">Posted  create <%= page.created_at %></span><div class="pull-right">
+    12: 
+    13:     </div>
+  
+app/views/page/index.html.erb:10:in `block in _app_views_page_index_html_erb___2825255667114914048_70329620989760'
+app/views/page/index.html.erb:5:in `_app_views_page_index_html_erb___2825255667114914048_70329620989760'
+Started GET "/page" for 127.0.0.1 at 2018-08-09 11:32:49 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:5
+  Rendered page/index.html.erb within layouts/application (120.5ms)
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit_post_path' for #<#<Class:0x00007fedc65f5800>:0x00007fedc836ef30>
+Did you mean?  edit_page_path):
+     7:     <h1><%= page.name %></h1>
+     8:     <p><%= page.description %></p>
+     9:     <div>
+    10:       <%= link_to 'Edit', edit_post_path(page) %>
+    11:       <span class="badge badge-success">Posted  create <%= page.created_at %></span><div class="pull-right">
+    12: 
+    13:     </div>
+  
+app/views/page/index.html.erb:10:in `block in _app_views_page_index_html_erb___2825255667114914048_70329621511220'
+app/views/page/index.html.erb:5:in `_app_views_page_index_html_erb___2825255667114914048_70329621511220'
+Started GET "/page" for 127.0.0.1 at 2018-08-09 11:38:15 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (0.8ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:5
+  Rendered page/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 1461ms (Views: 1458.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-09 11:40:18 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (45.2ms)
+Completed 200 OK in 109ms (Views: 106.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:40:36 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ifZS9wgLAuHB9P8Db8TQgTzntt8Wm57/XxjLAr+WMnSy71LWdZixL/BRIIORicb+qVe8LDeB/8PwydE5hTi8QA==", "page"=>{"name"=>"d", "description"=>"d"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 58ms (Views: 50.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:41:07 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KLizwwTmKxYDw+T8ICpo9drUSGKOgwvSDdCXmbj59z2m1qhnJOQNWbeSfbZPt/4131H3fXU20l+u6B4UWsgp3g==", "page"=>{"name"=>"dadasdad", "description"=>"dasdada"}, "commit"=>"Add drink"}
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 55ms (Views: 46.9ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:41:09 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tiydtwzjSSXPbtfqx11l8Ek1pc/vhqXOI07QoTr0/+44QoYTLOFvans/TqCowPMwTLAa0BQzfEOAdlks2MUhDQ==", "page"=>{"name"=>"dadasdad", "description"=>"dasdada"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 53ms (Views: 46.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2018-08-09 11:45:31 +0300
+  
+SyntaxError (/Users/imac5/RoR/blog/app/controllers/page_controller.rb:44: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/page_controller.rb:44: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/page" for 127.0.0.1 at 2018-08-09 11:45:56 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:5
+  Rendered page/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 81ms (Views: 72.0ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/page/1/edit" for 127.0.0.1 at 2018-08-09 11:45:58 +0300
+  
+AbstractController::ActionNotFound (The action 'edit' could not be found for PageController):
+  
+actionpack (5.2.0) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.0) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/page/1/edit" for 127.0.0.1 at 2018-08-09 11:46:26 +0300
+  
+AbstractController::ActionNotFound (The action 'edit' could not be found for PageController):
+  
+actionpack (5.2.0) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.0) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/page" for 127.0.0.1 at 2018-08-09 11:46:32 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:5
+  Rendered page/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/page/1/edit" for 127.0.0.1 at 2018-08-09 11:46:34 +0300
+  
+AbstractController::ActionNotFound (The action 'edit' could not be found for PageController):
+  
+actionpack (5.2.0) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.0) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/page" for 127.0.0.1 at 2018-08-09 11:50:30 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:5
+  Rendered page/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 78ms (Views: 70.7ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/page/1/edit" for 127.0.0.1 at 2018-08-09 11:50:31 +0300
+Processing by PageController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" WHERE "pages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/page_controller.rb:30
+  Rendering page/edit.html.erb within layouts/application
+  Rendered page/edit.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 56ms (Views: 48.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:50:32 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NZnxPT9OgnuOuKLd6O5XeWKFjAtUj5ui0lS4N1e7WBUOgPEcQt0xtb8dfV0Wo0EG9zWG+HWV+p59haIMbRXWIQ==", "page"=>{"name"=>"qq1", "description"=>"fsdfasdfsdafasdfsda"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 55ms (Views: 48.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:50:35 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"edzvr2Hs7hh8B2JzOwxKk4XTgsQkKmrMeHQHQXO7Vr/3svQLQe7IV8hW+zlUkdxTgFY929+fs0HbTI7MkYqIXA==", "page"=>{"name"=>"qq1dsds", "description"=>"fsdfasdfsdafasdfsda"}, "commit"=>"Add drink"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 54ms (Views: 48.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 11:50:37 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gUjNMrgPEELyiELhq/PiYBoVSDzI5LDqf9233QjU37APJtaWmA02DUbZ26vEbnSgH5D3IzNRaWfc5T5Q6uUBUw==", "page"=>{"name"=>"qq1dsds", "description"=>"fsdfasdfsdafasdfsda"}, "commit"=>"Add drink"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 62ms (Views: 55.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2018-08-09 11:54:14 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:5
+  Rendered page/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 56ms (Views: 48.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-09 11:55:26 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 62ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page/new" for 127.0.0.1 at 2018-08-09 11:55:27 +0300
+Processing by PageController#new as HTML
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 51ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2018-08-09 11:55:28 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:5
+  Rendered page/index.html.erb within layouts/application (155.4ms)
+Completed 500 Internal Server Error in 163ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `show_page_path' for #<#<Class:0x00007fedc5797920>:0x00007fedc4c9f748>
+Did you mean?  new_page_path):
+     8:     <p><%= page.description %></p>
+     9:     <div>
+    10:       <%= link_to 'Edit', edit_page_path(page) %>
+    11:       <%= link_to 'Show', show_page_path(page) %>
+    12:       <span class="badge badge-success">Posted  create <%= page.created_at %></span><div class="pull-right">
+    13: 
+    14:     </div>
+  
+app/views/page/index.html.erb:11:in `block in _app_views_page_index_html_erb___2825255667114914048_70329621670580'
+app/views/page/index.html.erb:5:in `_app_views_page_index_html_erb___2825255667114914048_70329621670580'
+Started GET "/page/1" for 127.0.0.1 at 2018-08-09 11:57:02 +0300
+Processing by PageController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" WHERE "pages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/page_controller.rb:4
+  Rendering page/show.html.erb within layouts/application
+  Rendered page/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 60ms (Views: 55.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/page/1" for 127.0.0.1 at 2018-08-09 11:57:36 +0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by PageController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" WHERE "pages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/page_controller.rb:4
+  Rendering page/show.html.erb within layouts/application
+  Rendered page/show.html.erb within layouts/application (1.4ms)
+Started GET "/page" for 127.0.0.1 at 2018-08-09 11:57:37 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (1.6ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:5
+  Rendered page/index.html.erb within layouts/application (191.4ms)
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `show_page_path' for #<#<Class:0x00007fa521693340>:0x00007fa523a9c610>
+Did you mean?  new_page_path):
+     8:     <p><%= page.description %></p>
+     9:     <div>
+    10:       <%= link_to 'Edit', edit_page_path(page) %>
+    11:       <%= link_to 'Show', show_page_path(page) %>
+    12:       <span class="badge badge-success">Posted  create <%= page.created_at %></span><div class="pull-right">
+    13: 
+    14:     </div>
+  
+app/views/page/index.html.erb:11:in `block in _app_views_page_index_html_erb__4295572561068416_70173622265320'
+app/views/page/index.html.erb:5:in `_app_views_page_index_html_erb__4295572561068416_70173622265320'
+Completed 200 OK in 2261ms (Views: 2232.8ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2018-08-09 11:57:40 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (1.1ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:5
+  Rendered page/index.html.erb within layouts/application (143.4ms)
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `show_page_path' for #<#<Class:0x00007fa521693340>:0x00007fa52066e3c0>
+Did you mean?  new_page_path):
+     8:     <p><%= page.description %></p>
+     9:     <div>
+    10:       <%= link_to 'Edit', edit_page_path(page) %>
+    11:       <%= link_to 'Show', show_page_path(page) %>
+    12:       <span class="badge badge-success">Posted  create <%= page.created_at %></span><div class="pull-right">
+    13: 
+    14:     </div>
+  
+app/views/page/index.html.erb:11:in `block in _app_views_page_index_html_erb__4295572561068416_70173594973920'
+app/views/page/index.html.erb:5:in `_app_views_page_index_html_erb__4295572561068416_70173594973920'
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-08-09 11:57:45 +0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [14 times] (7.6ms)
+  Rendered /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.9ms)
+  Rendered /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 37ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-08-09 11:57:48 +0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [14 times] (3.8ms)
+  Rendered /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/actionpack-5.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/imac5/.rvm/gems/ruby-2.5.1@blog/gems/railties-5.2.0/lib/rails/templates/rails/info/routes.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 26ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2018-08-09 11:58:17 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (0.4ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:5
+  Rendered page/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 61ms (Views: 58.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/page/1" for 127.0.0.1 at 2018-08-09 11:58:18 +0300
+Processing by PageController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" WHERE "pages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/page_controller.rb:4
+  Rendering page/show.html.erb within layouts/application
+  Rendered page/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 75ms (Views: 68.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2018-08-09 12:02:10 +0300
+Processing by PageController#index as HTML
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/controllers/page_controller.rb:35
+Completed 500 Internal Server Error in 184ms (ActiveRecord: 7.6ms)
+
+
+  
+NameError (undefined local variable or method `а' for #<PageController:0x00007fa526a811f0>):
+  
+app/controllers/page_controller.rb:35:in `block in index'
+app/controllers/page_controller.rb:35:in `sort'
+app/controllers/page_controller.rb:35:in `index'
+Started GET "/page" for 127.0.0.1 at 2018-08-09 12:02:21 +0300
+Processing by PageController#index as HTML
+  [1m[36mPage Load (0.2ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/controllers/page_controller.rb:35
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 0.2ms)
+
+
+  
+NameError (undefined local variable or method `а' for #<PageController:0x00007fa520675bc0>):
+  
+app/controllers/page_controller.rb:35:in `block in index'
+app/controllers/page_controller.rb:35:in `sort'
+app/controllers/page_controller.rb:35:in `index'
+Started GET "/page" for 127.0.0.1 at 2018-08-09 12:03:03 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:5
+  Rendered page/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 85ms (Views: 76.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/page/1/edit" for 127.0.0.1 at 2018-08-09 12:10:09 +0300
+Processing by PageController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" WHERE "pages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/page_controller.rb:29
+  Rendering page/edit.html.erb within layouts/application
+  Rendered page/edit.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 134ms (Views: 129.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 12:10:10 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aJYVyfmT3gdgtSZpbLv6P4+8LwOVcwSKWE4/+gRS0YxTjxXohABtyVEQ+emS9uxAGgwl8LRpZbb3nyXBPvxfuA==", "page"=>{"name"=>"qq1", "description"=>"fsdfasdfsdafasdfsda"}, "commit"=>"Add drink"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 68ms (Views: 59.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/page" for 127.0.0.1 at 2018-08-09 12:10:13 +0300
+Processing by PageController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ol/A4MndqAD37bmMAEQ5UtHo5S7kkUXy2BHFtHDrb9q0MdtE6d+OT0O8IMZv2a+S1G1aMR8knH97KUw5ktqxOQ==", "page"=>{"name"=>"qq1ads", "description"=>"fsdfasdfsdafasdfsda"}, "commit"=>"Add drink"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/page_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/page_controller.rb:12
+  Rendering page/new.html.erb within layouts/application
+  Rendered page/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 71ms (Views: 65.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2018-08-09 12:10:15 +0300
+Processing by PageController#index as HTML
+  Rendering page/index.html.erb within layouts/application
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  ↳ app/views/page/index.html.erb:5
+  Rendered page/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 62ms (Views: 56.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/page/1" for 127.0.0.1 at 2018-08-09 12:10:18 +0300
+Processing by PageController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" WHERE "pages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/page_controller.rb:4
+  Rendering page/show.html.erb within layouts/application
+  Rendered page/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 59ms (Views: 52.3ms | ActiveRecord: 0.3ms)
+
+

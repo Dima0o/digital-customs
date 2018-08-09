@@ -8,6 +8,7 @@ class Page < ApplicationRecord
             :description,
             :start,
             # :rating,
-            presence: true
+            presence: true,
+            length: { minimum: 5 }
 
 end

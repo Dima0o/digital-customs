@@ -1,11 +1,20 @@
-<h1>Page#index</h1>
-<p>Find me in app/views/page/index.html.erb</p>
-<h1>All list</h1>
+<h1>Hello, Rails!</h1>
 
-<ul class="list-group list-group-flush">
+
 
   <% @pages.each do |page|%>
-    <li class="list-group-item"><%= page.name %></li>
+    <div class="row">
+    <h1><%= page.name %></h1>
+    <p><%= page.description %></p>
+    <div>
+      <%= link_to 'Edit', edit_page_path(page) %>
+      <%= link_to 'Show', page_path(page) %>
+      <span class="badge badge-success">Posted  create <%= page.created_at %></span><div class="pull-right">
+
+    </div>
+    </div>
+    <hr>
+    </div>
   <% end %>
 
-</ul>
+

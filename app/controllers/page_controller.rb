@@ -14,16 +14,25 @@ class PageController < ApplicationController
   end
 
   def update
-
+    @article = Page.find(params[:id])
+    if @article.update(page_params)
+      redirect_to @article
+    else
+      render 'edit'
+    end
   end
 
   def destroy
-
   end
+
+    def edit
+      @page = Page.find(params[:id])
+    end
 
 
   def index
     @pages = Page.all
+
   end
 
   private
