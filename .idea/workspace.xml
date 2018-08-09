@@ -2,41 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f33f392a-6c7b-45a8-bbd6-f3edadf4ef9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/models/article.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/article/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/page.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/article.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/article.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/articles_controller.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/comments_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/comments_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/page_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/article_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/page.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/comments/_comment.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/comments/_comment.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/page/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/article/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/page/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/article/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/page/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/article/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/page/list.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/article/list.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/page/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/article/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/page/pages.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/page/show.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/page/viev.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20180807115847_create_pages.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20180809103345_create_comments.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/application_responder.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/application_responder.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/development.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/development.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/pages.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/articles.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/8Y/8YalDA6kc5oolh41q54LGOlzMnxxxVF9jzoOm_Ubj3I.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/8Y/8YalDA6kc5oolh41q54LGOlzMnxxxVF9jzoOm_Ubj3I.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/PN/PN41KTERZK43-UagexXVrInLCItua_R2KRBPV74Mfy4.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/PN/PN41KTERZK43-UagexXVrInLCItua_R2KRBPV74Mfy4.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/gh/gH3bPqsIVSOKPWmBE5kj2OBw-LNaHooqE7fbjteW40E.cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/assets/sprockets/v3.0/gh/gH3bPqsIVSOKPWmBE5kj2OBw-LNaHooqE7fbjteW40E.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/b7/2643f4066a2caf" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/b7/2643f4066a2caf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/f6/1d6cbbc74ae235" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-compile-cache/f6/1d6cbbc74ae235" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/cache/bootsnap-load-path-cache" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/bootsnap-load-path-cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/pids/server.pid" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/pids/server.pid" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -62,8 +28,9 @@
           <entry key="project.closed" value="4" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -102,7 +69,7 @@
           <entry key="Gemfile" value="15" />
           <entry key="Ruby Console" value="80" />
           <entry key="css" value="2" />
-          <entry key="erb" value="810" />
+          <entry key="erb" value="817" />
           <entry key="gitignore" value="7" />
           <entry key="html" value="1" />
           <entry key="js" value="3" />
@@ -119,7 +86,7 @@
           <entry key="JavaScript" value="3" />
           <entry key="Markdown" value="32" />
           <entry key="PLAIN_TEXT" value="16" />
-          <entry key="RHTML" value="810" />
+          <entry key="RHTML" value="817" />
           <entry key="Ruby" value="903" />
           <entry key="SCSS" value="18" />
         </counts>
@@ -153,7 +120,7 @@
         <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -162,7 +129,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/article/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -171,21 +138,21 @@
         <entry file="file://$PROJECT_DIR$/app/views/article/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/comments/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -197,8 +164,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/article_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+            <state relative-caret-position="690">
+              <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -206,8 +173,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/article/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            <state relative-caret-position="195">
+              <caret line="13" column="53" selection-start-line="11" selection-start-column="57" selection-end-line="13" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -284,8 +251,6 @@
         <option value="$PROJECT_DIR$/app/controllers/page_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/page/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/comment.rb" />
-        <option value="$PROJECT_DIR$/app/views/comments/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/comments/_comment.html.erb" />
         <option value="$PROJECT_DIR$/app/models/page.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180807115847_create_pages.rb" />
@@ -300,6 +265,8 @@
         <option value="$PROJECT_DIR$/app/controllers/article_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/article.rb" />
         <option value="$PROJECT_DIR$/app/views/article/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/comments/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/comments/_comment.html.erb" />
       </list>
     </option>
   </component>
@@ -338,8 +305,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -595,11 +562,12 @@
       <workItem from="1533212410172" duration="253000" />
       <workItem from="1533637282424" duration="21385000" />
       <workItem from="1533800524952" duration="17058000" />
+      <workItem from="1533818181177" duration="199000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39191000" />
+    <option name="totallyTimeSpent" value="39390000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -614,7 +582,7 @@
     <frame x="1920" y="23" width="1920" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49819493" visible="true" weight="0.18530351" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49819493" visible="true" weight="0.18690096" />
       <window_info id="Structure" order="1" sideWeight="0.50049555" side_tool="true" weight="0.18370607" />
       <window_info id="Favorites" order="2" sideWeight="0.50180507" side_tool="true" weight="0.18530351" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -627,7 +595,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49840257" weight="0.32903865" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4946752" visible="true" weight="0.40685225" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4946752" visible="true" weight="0.40685225" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5037274" side_tool="true" weight="0.32903865" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49893504" weight="0.32903865" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -823,9 +791,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/page/edite.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/page/edite.html.erb" />
     <entry file="file://$PROJECT_DIR$/test/models/comment_test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -833,13 +799,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180809093812_create_comments.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180809093812_create_comments.rb" />
     <entry file="file://$PROJECT_DIR$/test/controllers/comments_controller_test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -847,20 +807,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180807115847_create_pages.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb" />
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180807115847_create_pages.rb" />
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.5.1@blog/gems/activerecord-5.2.0/lib/active_record/migration.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -868,13 +816,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180809114635_create_articles.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180809114635_create_articles.rb" />
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.5.1@blog/gems/spring-2.0.2/lib/spring/client/rails.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
@@ -885,13 +827,7 @@
     <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180809103345_create_comments.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180809103345_create_comments.rb" />
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -923,13 +859,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
     <entry file="file://$PROJECT_DIR$/app/views/article/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -937,13 +867,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/article/pages.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/article/pages.html.erb" />
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -951,24 +875,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/article/viev.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/article/viev.html.erb" />
     <entry file="file://$PROJECT_DIR$/app/views/article/list.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/article/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -979,10 +890,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/article.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/article_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -993,45 +918,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/article_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/comments/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/article.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/article/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        <state relative-caret-position="180">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/article/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/article/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/article/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="53" selection-start-line="11" selection-start-column="57" selection-end-line="13" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/comments/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
         </state>
       </provider>
     </entry>
