@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-  # get 'page/index'
-  root 'page#index'
+  # get 'article/index'
+  root 'article#index'
 
 
 
-  resources :page do
+  resources :article do
     resources :comments
     end
 end
