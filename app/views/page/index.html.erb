@@ -9,6 +9,10 @@
     <div>
       <%= link_to 'Edit', edit_page_path(page) %>
       <%= link_to 'Show', page_path(page) %>
+      <%= link_to 'Destroy', page_path(page),
+                  method: :delete,
+                      data: { confirm: 'Are you sure?' } %>
+
       <span class="badge badge-success">Posted  create <%= page.created_at %></span><div class="pull-right">
 
     </div>
@@ -16,5 +20,4 @@
     <hr>
     </div>
   <% end %>
-
 

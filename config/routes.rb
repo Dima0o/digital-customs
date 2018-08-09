@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
 
 
-  resources :page
-
+  resources :page do
+    resources :comments
+    end
 end

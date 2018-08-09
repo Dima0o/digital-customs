@@ -1,7 +1,4 @@
 <h1>new page</h1>
-<%= simple_form_for(@page, method: :post, url: page_index_path,  defaults: { input_html: { class: 'default_class' } }) do |f| %>
-  <%= f.input :name %>
-  <%= f.input :description %>
+<%= render 'form' %>
 
-  <%= f.submit "Add drink", class: "btn btn-primary" %>
-<% end %>
+<%= link_to 'Back', page_index_path %>

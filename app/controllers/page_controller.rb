@@ -22,8 +22,7 @@ class PageController < ApplicationController
     end
   end
 
-  def destroy
-  end
+
 
     def edit
       @page = Page.find(params[:id])
@@ -33,6 +32,13 @@ class PageController < ApplicationController
   def index
     @pages = Page.all
 
+  end
+
+
+  def destroy
+    @page = Page.find(params[:id])
+    @page.destroy
+    redirect_to page_index_path
   end
 
   private
