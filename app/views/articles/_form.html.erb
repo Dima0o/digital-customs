@@ -1,0 +1,7 @@
+
+<%= simple_form_for(@article, method: :post, url: articles_path, defaults: {input_html: {class: 'default_class' } }) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :text %>
+
+  <%= f.submit action_name, class: "btn btn-primary" %>
+<% end %>
