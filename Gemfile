@@ -50,6 +50,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'awesome_print'                         # Pretty print your Ruby objects with style -- in full color and with proper indentation.
 end
 
 group :test do
@@ -68,3 +69,6 @@ gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'simple_form'
 gem "responders"
+
+
+gem 'devise'

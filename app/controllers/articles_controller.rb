@@ -1,9 +1,7 @@
 class ArticlesController < ApplicationController
 
-  http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
-
-  def show
-    @article = Article.find(params[:id])
+  def index
+    @articles = Article.all.order('created_at DESC')
   end
 
   def new
@@ -11,33 +9,38 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.create(page_params)
-    respond_with @article
+    @article = Article.new(article_params)
+    @article.user = current_user
+    if @article.save
+      redirect_to articles_path
+    else
+      render 'new'
+    end
+  end
+
+  def show
+    @article = Article.find(params[:id])
+  end
+
+  def edit
+    @article = Article.find(params[:id])
   end
 
   def update
+    # с помощью Active Record нахожу статью по id, которые беру из параметров
     @article = Article.find(params[:id])
     if @articles.update(page_params)
+
+      # Делаю переход(переадресацию) на страницу /articles домашняя страница статей
+      # TODO: сделать переадресацию на текущий статью
       redirect_to @articles
     else
       render 'edit'
     end
   end
 
-
-
-  def edit
-    @article = Article.find(params[:id])
-  end
-
-
-  def index
-    @articles = Article.all.order('created_at DESC')
-  end
-
-
   def destroy
-    puts "1111"
+
     @article = Article.find(params[:id])
     @article.destroy
     redirect_to articles_path
@@ -45,7 +48,7 @@ class ArticlesController < ApplicationController
 
   private
 
-  def page_params
+  def article_params
     params.require(:article).permit(:title, :text)
   end
 
