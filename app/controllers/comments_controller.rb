@@ -7,14 +7,15 @@ class CommentsController < ApplicationController
     # TODO: отследить глобальные пареметры доступные в контроллерах
     @comment.user = current_user
     @comment.save
-    redirect_to article_path(@article)
+    respond_with @comment
   end
 
   def destroy
     @article = Article.find(params[:article_id])
     @comment = @article.comments.find(params[:id])
     @comment.destroy
-    redirect_to article_path(@article)
+    respond_with @comment
+  #  redirect_to article_path(@article)
   end
 
   private

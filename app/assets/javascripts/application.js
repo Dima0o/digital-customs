@@ -19,3 +19,35 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require_tree .
+
+
+
+
+$(document).ready(function() {
+
+    validation();
+
+});
+
+function validation() {
+    var $titleInput = $("#article_title");
+
+    $titleInput.change( function(event) {
+        var $errorTag = $(event.currentTarget).closest('form.new_article').find('p.title-error');
+        if($(event.currentTarget).val().length <= 5) {
+            $(event.currentTarget).addClass('validation-error');
+            $errorTag.removeClass('hidden');
+        } else {
+            $(event.currentTarget).removeClass('validation-error');
+            $errorTag.addClass('hidden');
+        }
+    });
+
+    $titleInput.focus( function(event) {
+        if($(event.currentTarget).hasClass('validation-error')) {
+            $(event.currentTarget).addClass('validation-error');
+        } else {
+            $(event.currentTarget).removeClass('validation-error');
+        }
+    });
+}

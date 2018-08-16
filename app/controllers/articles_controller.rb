@@ -1,7 +1,14 @@
 class ArticlesController < ApplicationController
 
   def index
-    @articles = Article.all.order('created_at DESC')
+    @articles = Article.all
+
+    if params[:q].present?
+       @articles = @articles.where("articles.title ILIKE :q", q: "%#{params[:q]}%")
+    end
+    @articles = @articles.order('created_at DESC')
+
+
   end
 
   def new
