@@ -26,3 +26,21 @@
     </div>
   <% end %>
 
+
+
+
+<% @list_ip.each do |ip, articles| %>
+  <tr>
+    <td>
+      <%= ip %>
+    </td>
+    <td>
+      <% articles.each do |article|   %>
+        <p>
+          <%= article.user.email %>
+        </p>
+      <% end %>
+    </td>
+  </tr>
+
+<% end %>

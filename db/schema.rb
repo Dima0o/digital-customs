@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2018_08_15_113253) do
   create_table "articles", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.string "title", null: false
+    t.string "ip", null: false
     t.text "text", null: false
     t.integer "rating", default: 0, null: false
     t.datetime "created_at", null: false

@@ -7,6 +7,7 @@ class Article < ApplicationRecord
 
   validates :title,
             :text,
+            :ip,
             presence: true
 
 

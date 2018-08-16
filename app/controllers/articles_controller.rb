@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
     end
     @articles = @articles.order('created_at DESC')
 
-
+    @list_ip = Article.all.group_by(&:ip)
   end
 
   def new
@@ -18,6 +18,7 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.new(article_params)
     @article.user = current_user
+    @article.ip = request.remote_ip
     if @article.save
       redirect_to articles_path
     else
