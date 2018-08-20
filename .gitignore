@@ -37,3 +37,5 @@ yarn-debug.log*
 .yarn-integrity
 *.xml
 .idea/workspace.xml
+.idea/workspace.xml
+log/development.log
