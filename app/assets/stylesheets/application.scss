@@ -6,7 +6,18 @@
 .validation-error {
   border: 1px solid red !important;
 }
+.validation-success {
+  border: 1px solid green !important;
+}
 
 .validation-text {
   color: red;
+}
+
+.text-error{
+  color: red;
+}
+
+.text-success{
+  color: green;
 }

@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'persons/profile'
   # get 'article/index'
 
-
+  post 'check_nickname', to: 'static#check_nickname'
 
   get 'persons/profile', as: 'user_root'
 

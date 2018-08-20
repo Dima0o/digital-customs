@@ -11,4 +11,8 @@ class User < ApplicationRecord
 
   has_many :articles, dependent: :destroy
   has_many :ratings,  dependent: :destroy, as: :ratingable
+
+
+  validates :nickname, presence: true, uniqueness: true
+
 end
