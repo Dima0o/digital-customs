@@ -1,12 +1,16 @@
-class ArticlesController < ApplicationController
+class ArticlesController < LoggedUserController
+
+  before_action :set_resource, only: %i[show edit update destroy]
 
   def index
-    @articles = Article.all
+    # @articles = Article.all
+    @articles = policy_scope(Article)
 
     if params[:q].present?
        @articles = @articles.where("articles.title ILIKE :q", q: "%#{params[:q]}%")
     end
     @articles = @articles.order('created_at DESC')
+    @articles = @articles.page(params[:page])
 
     @list_ip = Article.all.group_by(&:ip)
   end
@@ -27,28 +31,28 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    @article = Article.find(params[:id])
+    authorize @article
   end
 
   def edit
-    @article = Article.find(params[:id])
+    authorize @article
   end
 
   def update
+    authorize @article
     # с помощью Active Record нахожу статью по id, которые беру из параметров
-    @article = Article.find(params[:id])
-    if @articles.update(page_params)
+    if @article.update(article_params)
 
       # Делаю переход(переадресацию) на страницу /articles домашняя страница статей
       # TODO: сделать переадресацию на текущий статью
-      redirect_to @articles
+      redirect_to articles_path
     else
       render 'edit'
     end
   end
 
   def destroy
-    @article = Article.find(params[:id])
+    authorize @article
     @article.destroy
     respond_with do |format|
       format.json { render json: @article }
@@ -56,6 +60,10 @@ class ArticlesController < ApplicationController
   end
 
   private
+
+  def set_resource
+    @article = Article.find(params[:id])
+  end
 
   def article_params
     params.require(:article).permit(:title, :text)

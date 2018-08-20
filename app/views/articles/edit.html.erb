@@ -1,6 +1,7 @@
-<h1>edite page</h1>
+<h1>Edit page</h1>
 
 
-<%= render 'form' %>
+<%= render partial: 'form', locals: {article: @article, method_name: :put, url: article_path(@article)} %>
+
 
 <%= link_to 'Back', articles_path %>

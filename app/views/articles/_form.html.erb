@@ -1,5 +1,5 @@
 
-<%= simple_form_for(@article, method: :post, url: articles_path, defaults: {input_html: {class: 'default_class' } }) do |f| %>
+<%= simple_form_for(article, method: method_name, url: url, defaults: {input_html: {class: 'default_class' } }) do |f| %>
   <%= f.input :title %>
   <p class="title-error hidden validation-text">Min length 5 symbols</p>
   <%= f.input :text %>

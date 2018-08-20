@@ -72,3 +72,14 @@ gem "responders"
 
 
 gem 'devise'
+
+
+# RailsAdmin is a Rails engine that provides an easy-to-use interface for managing your data.
+gem 'rails_admin'
+
+# A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for modern web app frameworks and ORMs
+gem 'kaminari'
+
+gem "pundit"
+
+
