@@ -32,17 +32,18 @@
           <ul class="nav navbar-nav">
             <li><%= link_to "Новая запись", new_article_path %></li>
             <li><%= link_to "Список", articles_path  %></li>
+            <li><%= link_to "Админ панель", rails_admin_path %></li>
           </ul>
         </div>
+        <form class="form-inline my-2 my-lg-0 navbar-right">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
       </div>
     </div>
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-9">
-          <%#= bootstrap_flash %>
-          <%= yield %>
-        </div>
         <div class="col-lg-3">
           <div class="well sidebar-nav">
             <h3>Sidebar</h3>
@@ -54,6 +55,7 @@
 
             <hr>
 
+
             <% if user_signed_in? %>
               <span>Здравствуйте, <%= current_user.email %></span>
               <%= link_to 'Выйти', destroy_user_session_path, :method => :delete %>
@@ -61,9 +63,13 @@
               <%= link_to 'Войти', new_user_session_path %> или <%= link_to 'Зарегистрироваться', new_user_registration_path %>
             <% end %>
 
-
           </div><!--/.well -->
         </div><!--/span-->
+
+        <div class="col-lg-9">
+          <%#= bootstrap_flash %>
+          <%= yield %>
+        </div>
       </div><!--/row-->
 
       <footer>

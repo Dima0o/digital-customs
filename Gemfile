@@ -82,4 +82,4 @@ gem 'kaminari'
 
 gem "pundit"
 
-
+gem 'carrierwave' #img

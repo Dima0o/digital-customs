@@ -32,6 +32,8 @@ class ArticlesController < LoggedUserController
 
   def show
     authorize @article
+    @article.show+=1
+    @article.save
   end
 
   def edit
@@ -44,7 +46,7 @@ class ArticlesController < LoggedUserController
     if @article.update(article_params)
 
       # Делаю переход(переадресацию) на страницу /articles домашняя страница статей
-      # TODO: сделать переадресацию на текущий статью
+
       redirect_to articles_path
     else
       render 'edit'
