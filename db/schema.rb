@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2018_08_15_113253) do
     t.string "ip", null: false
     t.text "text", null: false
     t.integer "rating", default: 0, null: false
-    t.integer "show", default: 0, null: false
+    t.integer "view_count", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_articles_on_user_id"

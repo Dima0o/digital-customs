@@ -47580,3 +47580,1801 @@ Processing by CommentsController#create as JS
 Completed 200 OK in 41ms (Views: 33.4ms | ActiveRecord: 2.3ms)
 
 
+Started GET "/articles/50" for 127.0.0.1 at 2018-08-21 12:34:54 +0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:67
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:36
+  [1m[36mArticle Update (0.7ms)[0m  [1m[33mUPDATE "articles" SET "show" = $1, "updated_at" = $2 WHERE "articles"."id" = $3[0m  [["show", 4], ["updated_at", "2018-08-21 09:34:54.909829"], ["id", 50]]
+  ↳ app/controllers/articles_controller.rb:36
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:36
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 50]]
+  ↳ app/views/articles/show.html.erb:6
+  Rendered collection of comments/_comment.html.erb [1 times] (2.7ms)
+  Rendered comments/_form.html.erb (3.4ms)
+  Rendered articles/show.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 191ms (Views: 121.8ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/articles/50" for 127.0.0.1 at 2018-08-21 12:34:55 +0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:36
+  [1m[36mArticle Update (0.5ms)[0m  [1m[33mUPDATE "articles" SET "show" = $1, "updated_at" = $2 WHERE "articles"."id" = $3[0m  [["show", 5], ["updated_at", "2018-08-21 09:34:55.997825"], ["id", 50]]
+  ↳ app/controllers/articles_controller.rb:36
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:36
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 50]]
+  ↳ app/views/articles/show.html.erb:6
+  Rendered collection of comments/_comment.html.erb [1 times] (1.7ms)
+  Rendered comments/_form.html.erb (1.4ms)
+  Rendered articles/show.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 109ms (Views: 99.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/articles/50" for 127.0.0.1 at 2018-08-21 12:56:28 +0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:67
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:36
+  [1m[36mArticle Update (0.4ms)[0m  [1m[33mUPDATE "articles" SET "show" = $1, "updated_at" = $2 WHERE "articles"."id" = $3[0m  [["show", 6], ["updated_at", "2018-08-21 09:56:28.493157"], ["id", 50]]
+  ↳ app/controllers/articles_controller.rb:36
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:36
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 50]]
+  ↳ app/views/articles/show.html.erb:6
+  Rendered collection of comments/_comment.html.erb [1 times] (14.5ms)
+  Rendered comments/_form.html.erb (5.5ms)
+  Rendered articles/show.html.erb within layouts/application (47.2ms)
+Completed 200 OK in 1548ms (Views: 1461.5ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 12:58:00 +0300
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:15
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (2.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY created_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 50]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 49]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 48]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 47]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 46]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 45]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 44]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 43]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 42]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 41]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:58
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  Rendered articles/index.html.erb within layouts/application (144.4ms)
+Completed 200 OK in 252ms (Views: 226.2ms | ActiveRecord: 17.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 12:58:45 +0300
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:15
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY created_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 50]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 49]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 48]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 47]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 46]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 45]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 44]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 43]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 42]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 41]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:58
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:70
+  Rendered articles/index.html.erb within layouts/application (107.2ms)
+Completed 200 OK in 186ms (Views: 170.4ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:42:26 +0300
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:15
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY created_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/articles/index.html.erb:10
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 50]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 49]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 48]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 47]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 46]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 45]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 44]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 43]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 42]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 41]]
+  ↳ app/views/articles/index.html.erb:21
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:58
+  Rendered articles/index.html.erb within layouts/application (110.8ms)
+Completed 200 OK in 298ms (Views: 266.5ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:43:33 +0300
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:15
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY created_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/articles/index.html.erb:126
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 50]]
+  ↳ app/views/articles/index.html.erb:137
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 49]]
+  ↳ app/views/articles/index.html.erb:137
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 48]]
+  ↳ app/views/articles/index.html.erb:137
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 47]]
+  ↳ app/views/articles/index.html.erb:137
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 46]]
+  ↳ app/views/articles/index.html.erb:137
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 45]]
+  ↳ app/views/articles/index.html.erb:137
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 44]]
+  ↳ app/views/articles/index.html.erb:137
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 43]]
+  ↳ app/views/articles/index.html.erb:137
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 42]]
+  ↳ app/views/articles/index.html.erb:137
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 41]]
+  ↳ app/views/articles/index.html.erb:137
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:174
+  Rendered articles/index.html.erb within layouts/application (76.0ms)
+Completed 200 OK in 164ms (Views: 150.1ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 16:03:04 +0300
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mArticle Load (5.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:15
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY created_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/articles/index.html.erb:126
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 50]]
+  ↳ app/views/articles/index.html.erb:137
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/policies/article_policy.rb:13
+  Rendered articles/index.html.erb within layouts/application (30.4ms)
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 14.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `view_count' for #<Article:0x00007ff12be63830>):
+    161:           <section>
+    162:             <i class="glyphicon glyphicon-user"></i> <%=article.user.first_name %>
+    163:             <i class="glyphicon glyphicon-calendar"> </i><%=  l article.created_at , format: :short%>
+    164:             <i class="glyphicon glyphicon-eye-open"></i> <%=article.view_count %>
+    165:             <%= link_to 'More ...', article_path(article), class: 'btn btn-default btn-sm pull-right' %>
+    166:           </section>
+    167:         </div>
+  
+app/views/articles/index.html.erb:164:in `block in _app_views_articles_index_html_erb__4499832443748282070_70336848020800'
+app/views/articles/index.html.erb:126:in `_app_views_articles_index_html_erb__4499832443748282070_70336848020800'
+Started GET "/" for 127.0.0.1 at 2018-08-21 16:03:52 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:15
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY created_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/articles/index.html.erb:126
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 50]]
+  ↳ app/views/articles/index.html.erb:137
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:152
+  Rendered articles/index.html.erb within layouts/application (23.3ms)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 8.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `view_count' for #<Article:0x00007fa6fa90cc68>):
+    151:           <section>
+    152:             <i class="glyphicon glyphicon-user"></i> <%=article.user.first_name %>
+    153:             <i class="glyphicon glyphicon-calendar"> </i><%=  l article.created_at , format: :short%>
+    154:             <i class="glyphicon glyphicon-eye-open"></i> <%=article.view_count %>
+    155:             <%= link_to 'More ...', article_path(article), class: 'btn btn-default btn-sm pull-right' %>
+    156:           </section>
+    157:         </div>
+  
+app/views/articles/index.html.erb:154:in `block in _app_views_articles_index_html_erb__4342405325197087540_70177572617260'
+app/views/articles/index.html.erb:126:in `_app_views_articles_index_html_erb__4342405325197087540_70177572617260'
+Started GET "/" for 127.0.0.1 at 2018-08-21 16:03:55 +0300
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:15
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY created_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/articles/index.html.erb:126
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 50]]
+  ↳ app/views/articles/index.html.erb:137
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:152
+  Rendered articles/index.html.erb within layouts/application (13.9ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 2.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `view_count' for #<Article:0x00007fa6f6c9f258>):
+    151:           <section>
+    152:             <i class="glyphicon glyphicon-user"></i> <%=article.user.first_name %>
+    153:             <i class="glyphicon glyphicon-calendar"> </i><%=  l article.created_at , format: :short%>
+    154:             <i class="glyphicon glyphicon-eye-open"></i> <%=article.view_count %>
+    155:             <%= link_to 'More ...', article_path(article), class: 'btn btn-default btn-sm pull-right' %>
+    156:           </section>
+    157:         </div>
+  
+app/views/articles/index.html.erb:154:in `block in _app_views_articles_index_html_erb__4342405325197087540_70177540754180'
+app/views/articles/index.html.erb:126:in `_app_views_articles_index_html_erb__4342405325197087540_70177540754180'
+Started GET "/" for 127.0.0.1 at 2018-08-21 16:04:31 +0300
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:15
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY created_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/articles/index.html.erb:126
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:149
+  Rendered articles/index.html.erb within layouts/application (66.6ms)
+Completed 200 OK in 1589ms (Views: 1583.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 16:28:39 +0300
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mArticle Load (2.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:15
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY created_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/articles/index.html.erb:12
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:35
+  Rendered articles/index.html.erb within layouts/application (52.5ms)
+Completed 200 OK in 200ms (Views: 188.7ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/articles/50" for 127.0.0.1 at 2018-08-21 16:29:37 +0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:67
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.2ms)
+
+
+  
+ActiveModel::MissingAttributeError (can't write unknown attribute `view_count`):
+  
+app/controllers/articles_controller.rb:35:in `show'
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (216.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "blog_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (179.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "blog_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (530.4ms)[0m  [1m[35mCREATE DATABASE "blog_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (341.6ms)[0m  [1m[35mCREATE DATABASE "blog_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(892336952976185220)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateUsers (20180809115218)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "nickname" character varying NOT NULL, "first_name" character varying, "last_name" character varying, "is_admin" boolean DEFAULT FALSE NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180809115218_devise_create_users.rb:5
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20180809115218_devise_create_users.rb:44
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/migrate/20180809115218_devise_create_users.rb:45
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_nickname" ON "users"  ("nickname")[0m
+  ↳ db/migrate/20180809115218_devise_create_users.rb:46
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180809115218"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateArticles (20180809115219)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "articles" ("id" bigserial primary key, "user_id" bigint NOT NULL, "title" character varying NOT NULL, "ip" character varying NOT NULL, "text" text NOT NULL, "rating" integer DEFAULT 0 NOT NULL, "view_count" integer DEFAULT 0 NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_3d31dad1cc"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20180809115219_create_articles.rb:3
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE  INDEX  "index_articles_on_user_id" ON "articles"  ("user_id")[0m
+  ↳ db/migrate/20180809115219_create_articles.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180809115219"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateComments (20180809115245)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "user_id" bigint NOT NULL, "article_id" bigint NOT NULL, "body" text NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_03de2dc08c"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_3bf61a60d3"
+FOREIGN KEY ("article_id")
+  REFERENCES "articles" ("id")
+)[0m
+  ↳ db/migrate/20180809115245_create_comments.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_comments_on_user_id" ON "comments"  ("user_id")[0m
+  ↳ db/migrate/20180809115245_create_comments.rb:3
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE  INDEX  "index_comments_on_article_id" ON "comments"  ("article_id")[0m
+  ↳ db/migrate/20180809115245_create_comments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180809115245"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateRatings (20180815113253)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "ratings" ("id" bigserial primary key, "ratingable_type" character varying NOT NULL, "ratingable_id" bigint NOT NULL, "user_id" bigint NOT NULL, "mark" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_a7dfeb9f5f"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20180815113253_create_ratings.rb:4
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_ratings_on_ratingable_type_and_ratingable_id" ON "ratings"  ("ratingable_type", "ratingable_id")[0m
+  ↳ db/migrate/20180815113253_create_ratings.rb:4
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_ratings_on_user_id" ON "ratings"  ("user_id")[0m
+  ↳ db/migrate/20180815113253_create_ratings.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180815113253"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-08-21 13:30:34.991416"], ["updated_at", "2018-08-21 13:30:34.991416"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(892336952976185220)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Admin"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "is_admin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "admin@ya.ru"], ["encrypted_password", "$2a$11$u9rEA0Hwg4wN794E0jXt2.YNU9BE/DF9onw6MpFdYUvyRTX0BtxJ."], ["nickname", "Admin"], ["first_name", "Сын маминой подруги"], ["last_name", "Твоей маминой подруги"], ["is_admin", true], ["created_at", "2018-08-21 13:30:35.166878"], ["updated_at", "2018-08-21 13:30:35.166878"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test0@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord0"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test0@ya.ru"], ["encrypted_password", "$2a$11$mQ3QZiXNGLOcdTuGiXuHmef1MrsoMgi7iy1eKS3CE4wFTiFqwINqG"], ["nickname", "Lord0"], ["first_name", "Людовик 0"], ["last_name", "'Генрихович 0"], ["created_at", "2018-08-21 13:30:35.274385"], ["updated_at", "2018-08-21 13:30:35.274385"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test1@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord1"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test1@ya.ru"], ["encrypted_password", "$2a$11$FyCsXHb9czYowuziV1da7ee2/nWTWjeHNpWFZNm3w3suxW68pRK8S"], ["nickname", "Lord1"], ["first_name", "Людовик 1"], ["last_name", "'Генрихович 1"], ["created_at", "2018-08-21 13:30:35.377849"], ["updated_at", "2018-08-21 13:30:35.377849"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test2@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord2"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test2@ya.ru"], ["encrypted_password", "$2a$11$Kvp0O1dR.2u5Vn/cu2Q6UeS3QSxRz66EGnFMnhjWcWzB1PC43FIPm"], ["nickname", "Lord2"], ["first_name", "Людовик 2"], ["last_name", "'Генрихович 2"], ["created_at", "2018-08-21 13:30:35.486579"], ["updated_at", "2018-08-21 13:30:35.486579"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test3@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord3"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test3@ya.ru"], ["encrypted_password", "$2a$11$UQRYACNUnrwybHbqEAfpAuIo2PTohPa9pMACZCSR6DxLU/WgDZb1K"], ["nickname", "Lord3"], ["first_name", "Людовик 3"], ["last_name", "'Генрихович 3"], ["created_at", "2018-08-21 13:30:35.597845"], ["updated_at", "2018-08-21 13:30:35.597845"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test4@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord4"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test4@ya.ru"], ["encrypted_password", "$2a$11$k98sOt/6EdPvtfP15dfZZOQ9gT5aao2GnkA0BCDI2WelhnNVE5b4a"], ["nickname", "Lord4"], ["first_name", "Людовик 4"], ["last_name", "'Генрихович 4"], ["created_at", "2018-08-21 13:30:35.714324"], ["updated_at", "2018-08-21 13:30:35.714324"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test5@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord5"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test5@ya.ru"], ["encrypted_password", "$2a$11$ZvIfA4fSUs82TvribNwXn.mCiIgrQdoDjnvfPQh02I.9D.8htZ4LW"], ["nickname", "Lord5"], ["first_name", "Людовик 5"], ["last_name", "'Генрихович 5"], ["created_at", "2018-08-21 13:30:35.831055"], ["updated_at", "2018-08-21 13:30:35.831055"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test6@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord6"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test6@ya.ru"], ["encrypted_password", "$2a$11$2RZ3nDoHkMS8bYilmCea2OeRvNyeyVU//pQRaayjgaWnFS.uD8i/K"], ["nickname", "Lord6"], ["first_name", "Людовик 6"], ["last_name", "'Генрихович 6"], ["created_at", "2018-08-21 13:30:35.938009"], ["updated_at", "2018-08-21 13:30:35.938009"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test7@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord7"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test7@ya.ru"], ["encrypted_password", "$2a$11$WTQIh0oal/795NvcV4xX6.8EbvrfsWugrkqIoRUzPTuEre1mKQMkC"], ["nickname", "Lord7"], ["first_name", "Людовик 7"], ["last_name", "'Генрихович 7"], ["created_at", "2018-08-21 13:30:36.055188"], ["updated_at", "2018-08-21 13:30:36.055188"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test8@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord8"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test8@ya.ru"], ["encrypted_password", "$2a$11$Y15MxLRi1ruFTYCLstIklOTyafMoyKWbZDVybJqelHQzCnK6XPSiy"], ["nickname", "Lord8"], ["first_name", "Людовик 8"], ["last_name", "'Генрихович 8"], ["created_at", "2018-08-21 13:30:36.162656"], ["updated_at", "2018-08-21 13:30:36.162656"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test9@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord9"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test9@ya.ru"], ["encrypted_password", "$2a$11$QNvSTmbb57QKK6Qs3NLaJuayYIF2DzjTpku0bUVhG86G0zFbdFn4O"], ["nickname", "Lord9"], ["first_name", "Людовик 9"], ["last_name", "'Генрихович 9"], ["created_at", "2018-08-21 13:30:36.271865"], ["updated_at", "2018-08-21 13:30:36.271865"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test10@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord10"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test10@ya.ru"], ["encrypted_password", "$2a$11$/ZGTyvs8D14u863umbE.V.AG2ljdi7ovNSSnLo.Tn/1mnFu7a67ty"], ["nickname", "Lord10"], ["first_name", "Людовик 10"], ["last_name", "'Генрихович 10"], ["created_at", "2018-08-21 13:30:36.378929"], ["updated_at", "2018-08-21 13:30:36.378929"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test11@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord11"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test11@ya.ru"], ["encrypted_password", "$2a$11$5VlD/w1NC06EmurN4IBxqenadvPgYapGtLSKC9pMXACzxUAqqAM9K"], ["nickname", "Lord11"], ["first_name", "Людовик 11"], ["last_name", "'Генрихович 11"], ["created_at", "2018-08-21 13:30:36.487713"], ["updated_at", "2018-08-21 13:30:36.487713"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test12@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord12"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test12@ya.ru"], ["encrypted_password", "$2a$11$s5kKUB3nrW4QSL2NaY.Wb.iLdK3/X0alN4hptaghOWMtRPNvNC3DO"], ["nickname", "Lord12"], ["first_name", "Людовик 12"], ["last_name", "'Генрихович 12"], ["created_at", "2018-08-21 13:30:36.596422"], ["updated_at", "2018-08-21 13:30:36.596422"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test13@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord13"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test13@ya.ru"], ["encrypted_password", "$2a$11$Bj5wTvZTE7N1yjbDpCp.BOPrLru9wC19fmU7ix7Wss9RWM9ux6eki"], ["nickname", "Lord13"], ["first_name", "Людовик 13"], ["last_name", "'Генрихович 13"], ["created_at", "2018-08-21 13:30:36.703538"], ["updated_at", "2018-08-21 13:30:36.703538"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test14@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord14"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test14@ya.ru"], ["encrypted_password", "$2a$11$i10Q488Ml0lNK.Npv4nTtunILYmRB/BzxT4TA8c5R98/iwm0tXKPy"], ["nickname", "Lord14"], ["first_name", "Людовик 14"], ["last_name", "'Генрихович 14"], ["created_at", "2018-08-21 13:30:36.809972"], ["updated_at", "2018-08-21 13:30:36.809972"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test15@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord15"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test15@ya.ru"], ["encrypted_password", "$2a$11$pgFI0q.7IlBt2COxCLSb1.NVT1LWMVlPy.aCl8bvr0bZZn.f/sO9a"], ["nickname", "Lord15"], ["first_name", "Людовик 15"], ["last_name", "'Генрихович 15"], ["created_at", "2018-08-21 13:30:36.917208"], ["updated_at", "2018-08-21 13:30:36.917208"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test16@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord16"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test16@ya.ru"], ["encrypted_password", "$2a$11$cbpsi0v4m/ZMR1vBRXiUtOX40wPsK9JONpnczuZcKWQYYlyxMcUQW"], ["nickname", "Lord16"], ["first_name", "Людовик 16"], ["last_name", "'Генрихович 16"], ["created_at", "2018-08-21 13:30:37.024057"], ["updated_at", "2018-08-21 13:30:37.024057"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test17@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord17"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test17@ya.ru"], ["encrypted_password", "$2a$11$S75X.f8JVRno3V73mjRIveAIHYJaP4ctBSJT5Gy8FQWCp8.5Zdv/2"], ["nickname", "Lord17"], ["first_name", "Людовик 17"], ["last_name", "'Генрихович 17"], ["created_at", "2018-08-21 13:30:37.135920"], ["updated_at", "2018-08-21 13:30:37.135920"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test18@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord18"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test18@ya.ru"], ["encrypted_password", "$2a$11$f9f2wvqP/cNT0daJRcPnR.pPaUhMiIUboKUPyFjdZZXSdmwtgh2Ba"], ["nickname", "Lord18"], ["first_name", "Людовик 18"], ["last_name", "'Генрихович 18"], ["created_at", "2018-08-21 13:30:37.243404"], ["updated_at", "2018-08-21 13:30:37.243404"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test19@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord19"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test19@ya.ru"], ["encrypted_password", "$2a$11$COXQ1FrOf5INOSp5PZo29ubi4xoDXuxywwVGNSStdyvYgdTmWj4hC"], ["nickname", "Lord19"], ["first_name", "Людовик 19"], ["last_name", "'Генрихович 19"], ["created_at", "2018-08-21 13:30:37.362490"], ["updated_at", "2018-08-21 13:30:37.362490"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test20@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord20"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test20@ya.ru"], ["encrypted_password", "$2a$11$Um24M3qAsdqo1N6/H9kq0OpAtDsqEP1KGDnbYqvjgXZt4i8af3HXm"], ["nickname", "Lord20"], ["first_name", "Людовик 20"], ["last_name", "'Генрихович 20"], ["created_at", "2018-08-21 13:30:37.475445"], ["updated_at", "2018-08-21 13:30:37.475445"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test21@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord21"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test21@ya.ru"], ["encrypted_password", "$2a$11$6Ta1Q1fzygPuLu1sVq5q8udYKXi3sskRej2bznEr1eHXzPfqCukdm"], ["nickname", "Lord21"], ["first_name", "Людовик 21"], ["last_name", "'Генрихович 21"], ["created_at", "2018-08-21 13:30:37.590937"], ["updated_at", "2018-08-21 13:30:37.590937"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test22@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord22"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test22@ya.ru"], ["encrypted_password", "$2a$11$o33kLnlOJnhuHCkaqVN6jOhN92zEGcuzVJ6Ie5jcTvD0ZXQZrf1/u"], ["nickname", "Lord22"], ["first_name", "Людовик 22"], ["last_name", "'Генрихович 22"], ["created_at", "2018-08-21 13:30:37.698020"], ["updated_at", "2018-08-21 13:30:37.698020"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test23@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord23"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test23@ya.ru"], ["encrypted_password", "$2a$11$sWizuT2wpyiEmCfV886wbOmnNr4qeevFJxtEIXQVOYrUVTX59K3qu"], ["nickname", "Lord23"], ["first_name", "Людовик 23"], ["last_name", "'Генрихович 23"], ["created_at", "2018-08-21 13:30:37.809887"], ["updated_at", "2018-08-21 13:30:37.809887"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test24@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord24"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test24@ya.ru"], ["encrypted_password", "$2a$11$ZpR3AzhrrSTA/LlyILU3xuIsUGbApibYY02ET/H/QFie3IUL9txhK"], ["nickname", "Lord24"], ["first_name", "Людовик 24"], ["last_name", "'Генрихович 24"], ["created_at", "2018-08-21 13:30:37.918323"], ["updated_at", "2018-08-21 13:30:37.918323"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test25@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord25"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test25@ya.ru"], ["encrypted_password", "$2a$11$F58Fvned//W7ER9yeduOruCKbVEVYDhGGgZBBtuRl/BQf8a8XpE3u"], ["nickname", "Lord25"], ["first_name", "Людовик 25"], ["last_name", "'Генрихович 25"], ["created_at", "2018-08-21 13:30:38.031348"], ["updated_at", "2018-08-21 13:30:38.031348"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test26@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord26"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test26@ya.ru"], ["encrypted_password", "$2a$11$90oAmsTT9eAgGbjPkChbWuMJOvtJyj2Ynzm4v/HOhuSYLJB6XQnJa"], ["nickname", "Lord26"], ["first_name", "Людовик 26"], ["last_name", "'Генрихович 26"], ["created_at", "2018-08-21 13:30:38.138284"], ["updated_at", "2018-08-21 13:30:38.138284"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test27@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord27"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test27@ya.ru"], ["encrypted_password", "$2a$11$FcQQDrdfs5Eq6UHKA9Ndyu0TKPWcsZRLSeSbuIZFKgg96W1ioaFGO"], ["nickname", "Lord27"], ["first_name", "Людовик 27"], ["last_name", "'Генрихович 27"], ["created_at", "2018-08-21 13:30:38.248586"], ["updated_at", "2018-08-21 13:30:38.248586"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test28@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord28"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test28@ya.ru"], ["encrypted_password", "$2a$11$grq6j3573Rb1sWezBPmnaOhhp8Kl.WLKUt07eLc9goUBA3sCgCQT2"], ["nickname", "Lord28"], ["first_name", "Людовик 28"], ["last_name", "'Генрихович 28"], ["created_at", "2018-08-21 13:30:38.362994"], ["updated_at", "2018-08-21 13:30:38.362994"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test29@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord29"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test29@ya.ru"], ["encrypted_password", "$2a$11$1XuoHJjEp6ANbRYJfryqyulvsPqln./Q1rYS/aXRaGmyqJS6nI1Cu"], ["nickname", "Lord29"], ["first_name", "Людовик 29"], ["last_name", "'Генрихович 29"], ["created_at", "2018-08-21 13:30:38.474595"], ["updated_at", "2018-08-21 13:30:38.474595"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test30@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord30"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test30@ya.ru"], ["encrypted_password", "$2a$11$0Luei4024XSZK49WtAMMQ.Os7tP5SWkcEOVXDw56zl4KpAWa12SAO"], ["nickname", "Lord30"], ["first_name", "Людовик 30"], ["last_name", "'Генрихович 30"], ["created_at", "2018-08-21 13:30:38.590351"], ["updated_at", "2018-08-21 13:30:38.590351"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test31@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord31"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test31@ya.ru"], ["encrypted_password", "$2a$11$1w21fE3djtrmU85Jf2/bcueg.ATzz6pOz075x/VTZMD9MJANWL8Yy"], ["nickname", "Lord31"], ["first_name", "Людовик 31"], ["last_name", "'Генрихович 31"], ["created_at", "2018-08-21 13:30:38.709729"], ["updated_at", "2018-08-21 13:30:38.709729"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test32@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord32"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test32@ya.ru"], ["encrypted_password", "$2a$11$i6uNd.1nAXBXLoCSCu7L2uVIwmc3j/cxNq95I9b46CGvR7FYDDZ4e"], ["nickname", "Lord32"], ["first_name", "Людовик 32"], ["last_name", "'Генрихович 32"], ["created_at", "2018-08-21 13:30:38.815597"], ["updated_at", "2018-08-21 13:30:38.815597"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test33@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord33"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test33@ya.ru"], ["encrypted_password", "$2a$11$5fk3IASP1zaf6x7yhi4LX.0rAyTF0ZD1Ig5dIfQTIyu3Zo5kdzq6O"], ["nickname", "Lord33"], ["first_name", "Людовик 33"], ["last_name", "'Генрихович 33"], ["created_at", "2018-08-21 13:30:38.922810"], ["updated_at", "2018-08-21 13:30:38.922810"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test34@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord34"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test34@ya.ru"], ["encrypted_password", "$2a$11$8Wej1xaORRhK.MzpyATx7etrQ6QzsbbXHP9VZ.M73VnZsmqXgpb9O"], ["nickname", "Lord34"], ["first_name", "Людовик 34"], ["last_name", "'Генрихович 34"], ["created_at", "2018-08-21 13:30:39.027481"], ["updated_at", "2018-08-21 13:30:39.027481"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test35@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord35"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test35@ya.ru"], ["encrypted_password", "$2a$11$ItPXXgc2ZYI2kCbKqbUd6O9A7e9gnOg0QBVyVw8fVTrzYdO2RNIDO"], ["nickname", "Lord35"], ["first_name", "Людовик 35"], ["last_name", "'Генрихович 35"], ["created_at", "2018-08-21 13:30:39.137020"], ["updated_at", "2018-08-21 13:30:39.137020"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test36@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord36"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test36@ya.ru"], ["encrypted_password", "$2a$11$cG5x9aWTre9YqYB6gAxLnObHrVBu9Ojl61b4vl3nhLkBL1b4IV9Qu"], ["nickname", "Lord36"], ["first_name", "Людовик 36"], ["last_name", "'Генрихович 36"], ["created_at", "2018-08-21 13:30:39.245384"], ["updated_at", "2018-08-21 13:30:39.245384"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test37@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord37"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test37@ya.ru"], ["encrypted_password", "$2a$11$uehQKXFBTqAWGNH8l4q9Ce5hZhkmyVHfCkVIQ41vYUttA.cvyDPju"], ["nickname", "Lord37"], ["first_name", "Людовик 37"], ["last_name", "'Генрихович 37"], ["created_at", "2018-08-21 13:30:39.351077"], ["updated_at", "2018-08-21 13:30:39.351077"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test38@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord38"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test38@ya.ru"], ["encrypted_password", "$2a$11$sPejsgsEBO2MDrfGfKwFxuDD8r2g0yXIWW1dRJ.bhssBRk8.mG/qi"], ["nickname", "Lord38"], ["first_name", "Людовик 38"], ["last_name", "'Генрихович 38"], ["created_at", "2018-08-21 13:30:39.455856"], ["updated_at", "2018-08-21 13:30:39.455856"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test39@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord39"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test39@ya.ru"], ["encrypted_password", "$2a$11$82dRmoz7btlb.P6f75.eAeV6UmfmNBx2empTWfc/64TdX3f4o/1wG"], ["nickname", "Lord39"], ["first_name", "Людовик 39"], ["last_name", "'Генрихович 39"], ["created_at", "2018-08-21 13:30:39.560904"], ["updated_at", "2018-08-21 13:30:39.560904"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test40@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord40"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test40@ya.ru"], ["encrypted_password", "$2a$11$h1dISJhIWU76./NWUaHIK.bLzPPLDCjpPCrhQGUS0vJtIqJxCMgzK"], ["nickname", "Lord40"], ["first_name", "Людовик 40"], ["last_name", "'Генрихович 40"], ["created_at", "2018-08-21 13:30:39.667312"], ["updated_at", "2018-08-21 13:30:39.667312"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test41@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord41"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test41@ya.ru"], ["encrypted_password", "$2a$11$pOHXGdXqVT20epK1o/9pMOvkYIAnaALgqGwzm2JlHQ4HwDhi33AiO"], ["nickname", "Lord41"], ["first_name", "Людовик 41"], ["last_name", "'Генрихович 41"], ["created_at", "2018-08-21 13:30:39.775462"], ["updated_at", "2018-08-21 13:30:39.775462"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test42@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord42"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test42@ya.ru"], ["encrypted_password", "$2a$11$SrUbeMS1NrEScriy0PkXrugYT50ljBQkX1fYtJ3XvL8J42QVa436i"], ["nickname", "Lord42"], ["first_name", "Людовик 42"], ["last_name", "'Генрихович 42"], ["created_at", "2018-08-21 13:30:39.880342"], ["updated_at", "2018-08-21 13:30:39.880342"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test43@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord43"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test43@ya.ru"], ["encrypted_password", "$2a$11$lFJgHhQNnazkGmEMbZFZSuUsaiaKmjut6cTnCUETpp5VoMoldUm.u"], ["nickname", "Lord43"], ["first_name", "Людовик 43"], ["last_name", "'Генрихович 43"], ["created_at", "2018-08-21 13:30:39.985041"], ["updated_at", "2018-08-21 13:30:39.985041"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test44@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord44"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test44@ya.ru"], ["encrypted_password", "$2a$11$/ivnDDGK.weJgiCeuzI.Aexx6TBoIA84eIebnjbST9ElNU2WEO98i"], ["nickname", "Lord44"], ["first_name", "Людовик 44"], ["last_name", "'Генрихович 44"], ["created_at", "2018-08-21 13:30:40.089868"], ["updated_at", "2018-08-21 13:30:40.089868"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test45@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord45"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test45@ya.ru"], ["encrypted_password", "$2a$11$qhwiDrIJJH7J0yPg9B/oy.a1GHmX6gvpYyW2DwcO4qE918dzqhb7C"], ["nickname", "Lord45"], ["first_name", "Людовик 45"], ["last_name", "'Генрихович 45"], ["created_at", "2018-08-21 13:30:40.202789"], ["updated_at", "2018-08-21 13:30:40.202789"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test46@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord46"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test46@ya.ru"], ["encrypted_password", "$2a$11$xvFpblDIlwIgvIjCtNhEUucJx1fW2UP1eOMd3hzyLK9OjhjANjSau"], ["nickname", "Lord46"], ["first_name", "Людовик 46"], ["last_name", "'Генрихович 46"], ["created_at", "2018-08-21 13:30:40.308382"], ["updated_at", "2018-08-21 13:30:40.308382"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test47@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord47"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test47@ya.ru"], ["encrypted_password", "$2a$11$tlx5wNL4YBI7xlt7KoABYOS7REtcMZzRgnPQE3XNvZ8Ai0OU9cKDG"], ["nickname", "Lord47"], ["first_name", "Людовик 47"], ["last_name", "'Генрихович 47"], ["created_at", "2018-08-21 13:30:40.412958"], ["updated_at", "2018-08-21 13:30:40.412958"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test48@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord48"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test48@ya.ru"], ["encrypted_password", "$2a$11$xqs09Qa2qf7hZsBQFXg1neNjfwtgezLFP/W0BlyezLNWKRihNLmT."], ["nickname", "Lord48"], ["first_name", "Людовик 48"], ["last_name", "'Генрихович 48"], ["created_at", "2018-08-21 13:30:40.517474"], ["updated_at", "2018-08-21 13:30:40.517474"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test49@ya.ru"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."nickname" = $1 LIMIT $2[0m  [["nickname", "Lord49"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "nickname", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "test49@ya.ru"], ["encrypted_password", "$2a$11$2RwAheSXy1MyxexLGbYva.NyohSxAEcymz/4MDU3Rmx9Oq17HsN0O"], ["nickname", "Lord49"], ["first_name", "Людовик 49"], ["last_name", "'Генрихович 49"], ["created_at", "2018-08-21 13:30:40.622623"], ["updated_at", "2018-08-21 13:30:40.622623"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (1.0ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 51], ["title", "test title0"], ["ip", "127.0.0.0"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.641757"], ["updated_at", "2018-08-21 13:30:40.641757"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.9ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 35], ["title", "test title1"], ["ip", "127.0.0.1"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.652807"], ["updated_at", "2018-08-21 13:30:40.652807"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 29], ["title", "test title2"], ["ip", "127.0.0.2"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.657991"], ["updated_at", "2018-08-21 13:30:40.657991"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 12], ["title", "test title3"], ["ip", "127.0.0.3"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.660642"], ["updated_at", "2018-08-21 13:30:40.660642"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 38], ["title", "test title4"], ["ip", "127.0.0.4"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.663266"], ["updated_at", "2018-08-21 13:30:40.663266"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 39], ["title", "test title5"], ["ip", "127.0.0.5"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.666209"], ["updated_at", "2018-08-21 13:30:40.666209"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 41], ["title", "test title6"], ["ip", "127.0.0.6"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.669608"], ["updated_at", "2018-08-21 13:30:40.669608"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 51], ["title", "test title7"], ["ip", "127.0.0.7"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.673667"], ["updated_at", "2018-08-21 13:30:40.673667"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 37], ["title", "test title8"], ["ip", "127.0.0.8"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.677387"], ["updated_at", "2018-08-21 13:30:40.677387"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 1], ["title", "test title9"], ["ip", "127.0.0.9"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.680305"], ["updated_at", "2018-08-21 13:30:40.680305"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 42], ["title", "test title10"], ["ip", "127.0.0.10"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.682767"], ["updated_at", "2018-08-21 13:30:40.682767"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 45], ["title", "test title11"], ["ip", "127.0.0.11"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.686247"], ["updated_at", "2018-08-21 13:30:40.686247"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 3], ["title", "test title12"], ["ip", "127.0.0.12"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.688891"], ["updated_at", "2018-08-21 13:30:40.688891"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 45], ["title", "test title13"], ["ip", "127.0.0.13"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.691350"], ["updated_at", "2018-08-21 13:30:40.691350"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 14], ["title", "test title14"], ["ip", "127.0.0.14"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.693816"], ["updated_at", "2018-08-21 13:30:40.693816"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 30], ["title", "test title15"], ["ip", "127.0.0.15"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.696329"], ["updated_at", "2018-08-21 13:30:40.696329"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 33], ["title", "test title16"], ["ip", "127.0.0.16"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.699149"], ["updated_at", "2018-08-21 13:30:40.699149"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 36], ["title", "test title17"], ["ip", "127.0.0.17"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.702013"], ["updated_at", "2018-08-21 13:30:40.702013"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 1], ["title", "test title18"], ["ip", "127.0.0.18"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.704673"], ["updated_at", "2018-08-21 13:30:40.704673"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 17], ["title", "test title19"], ["ip", "127.0.0.19"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.707312"], ["updated_at", "2018-08-21 13:30:40.707312"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 23], ["title", "test title20"], ["ip", "127.0.0.20"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.710503"], ["updated_at", "2018-08-21 13:30:40.710503"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 22], ["title", "test title21"], ["ip", "127.0.0.21"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.713142"], ["updated_at", "2018-08-21 13:30:40.713142"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 14], ["title", "test title22"], ["ip", "127.0.0.22"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.715772"], ["updated_at", "2018-08-21 13:30:40.715772"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 8], ["title", "test title23"], ["ip", "127.0.0.23"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.718529"], ["updated_at", "2018-08-21 13:30:40.718529"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 5], ["title", "test title24"], ["ip", "127.0.0.24"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.721227"], ["updated_at", "2018-08-21 13:30:40.721227"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 42], ["title", "test title25"], ["ip", "127.0.0.25"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.723999"], ["updated_at", "2018-08-21 13:30:40.723999"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 10], ["title", "test title26"], ["ip", "127.0.0.26"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.726649"], ["updated_at", "2018-08-21 13:30:40.726649"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 11], ["title", "test title27"], ["ip", "127.0.0.27"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.729282"], ["updated_at", "2018-08-21 13:30:40.729282"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 24], ["title", "test title28"], ["ip", "127.0.0.28"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.731939"], ["updated_at", "2018-08-21 13:30:40.731939"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 45], ["title", "test title29"], ["ip", "127.0.0.29"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.734560"], ["updated_at", "2018-08-21 13:30:40.734560"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 7], ["title", "test title30"], ["ip", "127.0.0.30"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.737218"], ["updated_at", "2018-08-21 13:30:40.737218"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 10], ["title", "test title31"], ["ip", "127.0.0.31"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.739983"], ["updated_at", "2018-08-21 13:30:40.739983"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 11], ["title", "test title32"], ["ip", "127.0.0.32"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.742724"], ["updated_at", "2018-08-21 13:30:40.742724"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 9], ["title", "test title33"], ["ip", "127.0.0.33"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.745568"], ["updated_at", "2018-08-21 13:30:40.745568"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 7], ["title", "test title34"], ["ip", "127.0.0.34"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.748259"], ["updated_at", "2018-08-21 13:30:40.748259"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 15], ["title", "test title35"], ["ip", "127.0.0.35"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.750898"], ["updated_at", "2018-08-21 13:30:40.750898"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 20], ["title", "test title36"], ["ip", "127.0.0.36"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.753632"], ["updated_at", "2018-08-21 13:30:40.753632"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 12], ["title", "test title37"], ["ip", "127.0.0.37"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.756281"], ["updated_at", "2018-08-21 13:30:40.756281"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 39], ["title", "test title38"], ["ip", "127.0.0.38"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.758827"], ["updated_at", "2018-08-21 13:30:40.758827"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 39], ["title", "test title39"], ["ip", "127.0.0.39"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.761363"], ["updated_at", "2018-08-21 13:30:40.761363"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 42], ["title", "test title40"], ["ip", "127.0.0.40"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.763865"], ["updated_at", "2018-08-21 13:30:40.763865"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 51], ["title", "test title41"], ["ip", "127.0.0.41"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.766589"], ["updated_at", "2018-08-21 13:30:40.766589"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 25], ["title", "test title42"], ["ip", "127.0.0.42"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.769290"], ["updated_at", "2018-08-21 13:30:40.769290"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 41], ["title", "test title43"], ["ip", "127.0.0.43"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.771944"], ["updated_at", "2018-08-21 13:30:40.771944"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 49], ["title", "test title44"], ["ip", "127.0.0.44"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.774508"], ["updated_at", "2018-08-21 13:30:40.774508"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 17], ["title", "test title45"], ["ip", "127.0.0.45"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.777042"], ["updated_at", "2018-08-21 13:30:40.777042"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 17], ["title", "test title46"], ["ip", "127.0.0.46"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.779826"], ["updated_at", "2018-08-21 13:30:40.779826"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 49], ["title", "test title47"], ["ip", "127.0.0.47"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.782363"], ["updated_at", "2018-08-21 13:30:40.782363"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.2ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 21], ["title", "test title48"], ["ip", "127.0.0.48"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.784831"], ["updated_at", "2018-08-21 13:30:40.784831"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "RANDOM()". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from block in <main> at /Users/diman0o/Desktop/Ror/blog/db/seeds.rb:36)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY RANDOM() DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mArticle Create (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("user_id", "title", "ip", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 26], ["title", "test title49"], ["ip", "127.0.0.49"], ["text", "Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. "], ["created_at", "2018-08-21 13:30:40.787453"], ["updated_at", "2018-08-21 13:30:40.787453"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+Started GET "/articles/50" for 127.0.0.1 at 2018-08-21 16:30:55 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 31ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-21 16:30:56 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 1518ms (Views: 1516.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-08-21 16:30:59 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GNF3KK2iZi+1AWpdwRQ2bFScyRWJ9eYDJXcR5rszJUomb/3CiO/eyTrNLDFpjFSro+l0d4f2HrWBSHtFUTbFfA==", "user"=>{"email"=>"admin@ya.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "admin@ya.ru"], ["LIMIT", 1]]
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.9ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", "2018-08-21 13:30:59.733793"], ["last_sign_in_at", "2018-08-21 13:30:59.733793"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2018-08-21 13:30:59.735238"], ["id", 1]]
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 146ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 16:30:59 +0300
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:15
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY created_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/articles/index.html.erb:12
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:35
+  Rendered articles/index.html.erb within layouts/application (65.8ms)
+Completed 200 OK in 193ms (Views: 167.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/articles/50" for 127.0.0.1 at 2018-08-21 16:31:03 +0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:36
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:36
+  [1m[36mArticle Update (0.3ms)[0m  [1m[33mUPDATE "articles" SET "view_count" = $1, "updated_at" = $2 WHERE "articles"."id" = $3[0m  [["view_count", 1], ["updated_at", "2018-08-21 13:31:03.447741"], ["id", 50]]
+  ↳ app/controllers/articles_controller.rb:36
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:36
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (1.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 50]]
+  ↳ app/views/articles/show.html.erb:6
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (8.4ms)
+  Rendered articles/show.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 104ms (Views: 81.9ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-08-21 16:31:10 +0300
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:15
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY created_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/articles/index.html.erb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:35
+  Rendered articles/index.html.erb within layouts/application (44.6ms)
+Completed 200 OK in 120ms (Views: 112.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-08-21 16:32:15 +0300
+Processing by ArticlesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/diman0o/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/articles_controller.rb:15
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY created_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/articles/index.html.erb:12
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:35
+  Rendered articles/index.html.erb within layouts/application (74.4ms)
+Completed 200 OK in 181ms (Views: 170.8ms | ActiveRecord: 2.2ms)
+
+

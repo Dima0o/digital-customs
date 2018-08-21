@@ -6,7 +6,7 @@ class CreateArticles < ActiveRecord::Migration[5.2]
       t.string     :ip,    null: false
       t.text       :text,  null: false
       t.integer    :rating,null: false, default: 0
-      t.integer    :show,  null: false, default: 0
+      t.integer    :view_count,  null: false, default: 0
 
       t.timestamps
     end

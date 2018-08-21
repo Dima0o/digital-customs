@@ -32,7 +32,7 @@ class ArticlesController < LoggedUserController
 
   def show
     authorize @article
-    @article.show+=1
+    @article.increment(:view_count, 1)
     @article.save
   end
 
