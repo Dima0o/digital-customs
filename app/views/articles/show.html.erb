@@ -1,5 +1,6 @@
 <h1><%= @article.title %></h1>
 <p><%= @article.text %>
+<%= image_tag @article.image.url(:large), class: 'image-show' if @article.image? %>
 <h2>Add a comment:</h2>
 <h2>Comments</h2>
 <div id="article-comments">

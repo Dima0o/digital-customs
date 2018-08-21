@@ -83,3 +83,5 @@ gem 'kaminari'
 gem "pundit"
 
 gem 'carrierwave' #img
+
+gem "mini_magick"
