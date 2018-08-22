@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   get 'persons/profile', as: 'user_root'
 
+  resources :users
   resources :articles do
     resources :comments
     resources :ratings, only: [ :new, :create ]
