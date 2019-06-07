@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2018_08_21_193943) do
   enable_extension "plpgsql"
 
   create_table "articles", force: :cascade do |t|
-    t.bigint "user_id", null: false
+    t.bigint "users_id", null: false
     t.string "title", null: false
     t.string "ip", null: false
     t.text "text", null: false
@@ -25,28 +25,28 @@ ActiveRecord::Schema.define(version: 2018_08_21_193943) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "image"
-    t.index ["user_id"], name: "index_articles_on_user_id"
+    t.index ["users_id"], name: "index_articles_on_users_id"
   end
 
   create_table "comments", force: :cascade do |t|
-    t.bigint "user_id", null: false
+    t.bigint "users_id", null: false
     t.bigint "article_id", null: false
     t.text "body", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["article_id"], name: "index_comments_on_article_id"
-    t.index ["user_id"], name: "index_comments_on_user_id"
+    t.index ["users_id"], name: "index_comments_on_users_id"
   end
 
   create_table "ratings", force: :cascade do |t|
     t.string "ratingable_type", null: false
     t.bigint "ratingable_id", null: false
-    t.bigint "user_id", null: false
+    t.bigint "users_id", null: false
     t.integer "mark", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["ratingable_type", "ratingable_id"], name: "index_ratings_on_ratingable_type_and_ratingable_id"
-    t.index ["user_id"], name: "index_ratings_on_user_id"
+    t.index ["users_id"], name: "index_ratings_on_users_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -71,8 +71,8 @@ ActiveRecord::Schema.define(version: 2018_08_21_193943) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "articles", "users"
+  add_foreign_key "articles", "users", column: "users_id"
   add_foreign_key "comments", "articles"
-  add_foreign_key "comments", "users"
-  add_foreign_key "ratings", "users"
+  add_foreign_key "comments", "users", column: "users_id"
+  add_foreign_key "ratings", "users", column: "users_id"
 end
